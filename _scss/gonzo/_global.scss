@@ -1,0 +1,28 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: $serif;
+}
+
+#page {
+  background: transparent url('/images/noisy.png') 0 0 repeat;
+  min-height: 100%;
+}
+
+@include headers {
+  font-family: $sans-serif;
+}
+
+// Scale the headers
+@include header-scale($scale-header-start, $scale-header-stop, $scale-header-interval, $scale-header-min);
+
+ul.item-list {
+  margin-left: 0;
+
+  li {
+    list-style: none;
+  }
+}

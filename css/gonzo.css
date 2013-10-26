@@ -1,0 +1,2022 @@
+/*@mixin text-shadow($h, $v, $b, $color) {
+  text-shadow: $h $v $b $color;
+  filter: dropshadow(color=$color, offx=$h, offy=$v);
+}*/
+/*! normalize.css v2.1.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\0000322}}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\0000332}}
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\0000341}}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\0000350}}
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Prevent system color scheme's background color being used in Firefox, IE,
+ *    and Opera.
+ * 2. Prevent system color scheme's text color being used in Firefox, IE, and
+ *    Opera.
+ * 3. Set default font family to sans-serif.
+ * 4. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\0000368}}
+html {
+  background: #fff;
+  /* 1 */
+  color: #000;
+  /* 2 */
+  font-family: sans-serif;
+  /* 3 */
+  -ms-text-size-adjust: 100%;
+  /* 4 */
+  -webkit-text-size-adjust: 100%;
+  /* 4 */
+}
+
+/**
+ * Remove default margin.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\0000380}}
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\0000392}}
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003101}}
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003114}}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003123}}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003132}}
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003140}}
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003148}}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003158}}
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003170}}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003179}}
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003187}}
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003195}}
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003204}}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003211}}
+sup {
+  top: -0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003215}}
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003227}}
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003235}}
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003247}}
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003259}}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003270}}
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003284}}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003296}}
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003308}}
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003323}}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003333}}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003343}}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003354}}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003367}}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003376}}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003386}}
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_normalize\.scss}line{font-family:\00003399}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*!
+ *
+.||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||.
+
+    .                                      '||            .           
+  .||.  .... ... ... ...    ....  ... ...   ||   ....   .||.    ....  
+   ||    '|.  |   ||'  || .|...||  ||'  ||  ||  '' .||   ||   .|...|| 
+   ||     '|.|    ||    | ||       ||    |  ||  .|' ||   ||   ||      
+   '|.'    '|     ||...'   '|...'  ||...'  .||. '|..'|'  '|.'  '|...' 
+        .. |      ||               ||                                 
+         ''      ''''             ''''      A Typographic Starter Kit            
+  
+  URL ........... http://typeplate.com
+  VERSION ....... 1.1.0
+  Github ........ https://github.com/typeplate/typeplate.github.io
+  AUTHORS ....... Dennis Gaebel (@gryghostvisuals) & Zachary Kain (@zakkain)
+  LICENSE ....... Creative Commmons Attribution 3.0
+  LICENSE URL ... http://creativecommons.org/licenses/by/3.0
+
+ .||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||.
+ *
+ */
+@font-face {
+  font-family: "Ampersand";
+  src: local("Georgia"), local("Garamond"), local("Palatino"), local("Book Antiqua");
+  unicode-range: U+0026;
+}
+
+@font-face {
+  font-family: "Ampersand";
+  src: local("Georgia");
+  unicode-range: U+270C;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003400}}
+body {
+  word-wrap: break-word;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003404}}
+pre code {
+  word-wrap: normal;
+}
+
+/**
+ * Dropcap Sass @include
+ * Use the following Sass @include with any selector you feel necessary.
+ *
+	@include dropcap($dropcap-float-position, $dropcap-font-size, $dropcap-font-family, $dropcap-txt-indent, $dropcap-margin, $dropcap-padding, $dropcap-color, $dropcap-line-height, $dropcap-bg);
+ *
+ * Extend this object into your custom stylesheet. Let the variables do the work.
+ *
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003529}}
+html {
+  font: normal 125%/1.65 serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003533}}
+body {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+  color: #444444;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003544}}
+small {
+  font-size: 65%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003567}}
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+  line-height: 1;
+  margin-top: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003582}}
+.tera {
+  font-size: 117px;
+  font-size: 7.3125rem;
+  margin-bottom: 0.22564rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003582}}
+.giga {
+  font-size: 90px;
+  font-size: 5.625rem;
+  margin-bottom: 0.29333rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003582}}
+.mega {
+  font-size: 72px;
+  font-size: 4.5rem;
+  margin-bottom: 0.36667rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003582}}
+.alpha, h1 {
+  font-size: 60px;
+  font-size: 3.75rem;
+  margin-bottom: 0.44rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003582}}
+.beta, h2 {
+  font-size: 48px;
+  font-size: 3rem;
+  margin-bottom: 0.55rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003582}}
+.gamma, h3 {
+  font-size: 36px;
+  font-size: 2.25rem;
+  margin-bottom: 0.73333rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003582}}
+.delta, h4 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  margin-bottom: 1.1rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003582}}
+.epsilon, h5 {
+  font-size: 21px;
+  font-size: 1.3125rem;
+  margin-bottom: 1.25714rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003582}}
+.zeta, h6 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  margin-bottom: 1.46667rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003622}}
+p {
+  margin: auto auto 1.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003624}}
+p + p {
+  text-indent: 1.5em;
+  margin-top: -1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003648}}
+abbr,
+acronym,
+blockquote,
+code,
+dir,
+kbd,
+listing,
+plaintext,
+q,
+samp,
+tt,
+var,
+xmp {
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -o-hyphens: none;
+  hyphens: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003656}}
+pre code {
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003661}}
+pre {
+  white-space: pre;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003665}}
+code {
+  white-space: pre;
+  font-family: monospace;
+}
+
+/**
+ * Abbreviations Markup
+ *
+	<abbr title="hyper text markup language">HMTL</abbr>
+ *
+ * Extend this object into your markup.
+ *
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003681}}
+abbr {
+  font-variant: small-caps;
+  font-weight: 600;
+  text-transform: lowercase;
+  color: gray;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003683}}
+abbr:hover {
+  cursor: help;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003697}}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #255e8d;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003707}}
+p + .drop-cap,
+section#main article .body p + p:first-child {
+  text-indent: 0;
+  margin-top: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003431}}
+.drop-cap:first-letter, section#main article .body h1 + p:first-letter,
+section#main article .body p:first-child:first-letter {
+  float: left;
+  margin: 0;
+  padding: 0 0.25em 0 0;
+  font-size: 3.25em;
+  font-family: inherit;
+  line-height: 1;
+  text-indent: 0;
+  background: transparent;
+  color: #255e8d;
+}
+
+/**
+ * Lining Definition Style Markup
+ *
+	<dl class="lining">
+		<dt><b></b></dt>
+		<dd></dd>
+	</dl>
+ *
+ * Extend this object into your markup.
+ *
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003470}}
+.lining dt,
+.lining dd {
+  display: inline;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003477}}
+.lining dt + dt:before,
+.lining dd + dt:before {
+  content: "\A";
+  white-space: pre;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003485}}
+.lining dd + dd:before {
+  content: ", ";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003489}}
+.lining dd:before {
+  content: ": ";
+  margin-left: -0.2rem;
+}
+
+/**
+ * Dictionary Definition Style Markup
+ *
+	<dl class="dictionary-style">
+		<dt><b></b></dt>
+			<dd></dd>
+	</dl>
+ *
+ * Extend this object into your markup.
+ *
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003497}}
+.dictionary-style dt {
+  display: inline;
+  counter-reset: definitions;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003501}}
+.dictionary-style dt + dt:before {
+  content: ", ";
+  margin-left: -0.2rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003507}}
+.dictionary-style dd {
+  display: block;
+  counter-increment: definitions;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003510}}
+.dictionary-style dd:before {
+  content: counter(definitions,decimal) ". ";
+}
+
+/**
+ * Blockquote Markup
+ *
+		<figure>
+			<blockquote cite="">
+				<p></p>
+			</blockquote>
+			<figcaption>
+				<cite>
+					<small><a href=""></a></small>
+				</cite>
+			</figcaption>
+		</figure>
+ *
+ * Extend this object into your markup.
+ *
+ */
+/**
+ * Pull Quotes Markup
+ *
+	<aside class="pull-quote">
+		<blockquote>
+			<p></p>
+		</blockquote>
+	</aside>
+ *
+ * Extend this object into your custom stylesheet.
+ *
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003791}}
+.pull-quote {
+  position: relative;
+  padding: 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003372}}
+.pull-quote:before, .pull-quote:after {
+  height: 1em;
+  opacity: 0.5;
+  position: absolute;
+  font-size: 4em;
+  color: #dc976e;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003379}}
+.pull-quote:before {
+  content: '“';
+  top: 0;
+  left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_typeplate\.scss}line{font-family:\00003384}}
+.pull-quote:after {
+  content: '”';
+  bottom: 0;
+  right: 0;
+}
+
+/**
+ * Figures Markup
+ *
+	<figure>
+		<figcaption>
+			<strong>Fig. 4.2 | </strong>Type Anatomy, an excerpt from Mark Boulton's book<cite title="http://designingfortheweb.co.uk/book/part3/part3_chapter11.php">"Designing for the Web"</cite>
+		</figcaption>
+	</figure>
+ *
+ * Extend this object into your markup.
+ *
+ */
+/**
+ * Footnote Markup : Replace 'X' with your unique number for each footnote
+ *
+	<article>
+		<p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
+		<footer>
+			<ol class="foot-notes">
+				<li id="fn-itemX"><a href="#fn-returnX">↩</a></li>
+			</ol>
+		</footer>
+	</article>
+ *
+ * Extend this object into your markup.
+ *
+ */
+/**
+ * Common application/niche styles.  No mixins.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_base\.scss}line{font-family:\000034}}
+body {
+  margin: 0 auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_base\.scss}line{font-family:\000038}}
+a {
+  outline: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_base\.scss}line{font-family:\0000311}}
+.icon-left {
+  margin-right: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_base\.scss}line{font-family:\0000312}}
+.icon-right {
+  margin-left: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_base\.scss}line{font-family:\0000313}}
+[class^="icon-"], [class*=" icon-"] {
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_base\.scss}line{font-family:\0000318}}
+.fixed-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_base\.scss}line{font-family:\0000324}}
+.hide {
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_lists\.scss}line{font-family:\000034}}
+ol, ul {
+  margin: 0 0 1em 2em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_lists\.scss}line{font-family:\000037}}
+ol li, ul li {
+  padding: .25em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_lists\.scss}line{font-family:\0000312}}
+ol li {
+  list-style: decimal outside none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_lists\.scss}line{font-family:\0000316}}
+ul li {
+  list-style: disc outside none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_lists\.scss}line{font-family:\0000322}}
+ul.no-bullet li {
+  list-style-type: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_lists\.scss}line{font-family:\0000323}}
+ul.disc li {
+  list-style-type: disc;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_lists\.scss}line{font-family:\0000324}}
+ul.circle li {
+  list-style-type: circle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_lists\.scss}line{font-family:\0000325}}
+ul.square li {
+  list-style-type: square;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_lists\.scss}line{font-family:\0000329}}
+ul.menu, ol.menu {
+  margin-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_lists\.scss}line{font-family:\0000332}}
+ul.menu li, ol.menu li {
+  list-style: none;
+  list-style-image: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/_global\.scss}line{font-family:\000031}}
+html {
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/_global\.scss}line{font-family:\000035}}
+body {
+  height: 100%;
+  font-family: "Rokkitt", serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/_global\.scss}line{font-family:\0000310}}
+#page {
+  background: transparent url("/images/noisy.png") 0 0 repeat;
+  min-height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000347}}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Belleza", sans-serif;
+}
+
+@media (max-width: 984px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000354}}
+  h1 {
+    font-size: 57.33333px;
+    font-size: 3.58333rem;
+    margin-bottom: 0.46047rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000355}}
+  h2 {
+    font-size: 45.86667px;
+    font-size: 2.86667rem;
+    margin-bottom: 0.57558rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000356}}
+  h3 {
+    font-size: 34.4px;
+    font-size: 2.15rem;
+    margin-bottom: 0.76744rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000357}}
+  h4 {
+    font-size: 22.93333px;
+    font-size: 1.43333rem;
+    margin-bottom: 1.15116rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000358}}
+  h5 {
+    font-size: 20.06667px;
+    font-size: 1.25417rem;
+    margin-bottom: 1.31561rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000359}}
+  h6 {
+    font-size: 17.2px;
+    font-size: 1.075rem;
+    margin-bottom: 1.53488rem;
+  }
+}
+@media (max-width: 61.5rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000354}}
+  h1 {
+    font-size: 57.33333px;
+    font-size: 3.58333rem;
+    margin-bottom: 0.46047rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000355}}
+  h2 {
+    font-size: 45.86667px;
+    font-size: 2.86667rem;
+    margin-bottom: 0.57558rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000356}}
+  h3 {
+    font-size: 34.4px;
+    font-size: 2.15rem;
+    margin-bottom: 0.76744rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000357}}
+  h4 {
+    font-size: 22.93333px;
+    font-size: 1.43333rem;
+    margin-bottom: 1.15116rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000358}}
+  h5 {
+    font-size: 20.06667px;
+    font-size: 1.25417rem;
+    margin-bottom: 1.31561rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000359}}
+  h6 {
+    font-size: 17.2px;
+    font-size: 1.075rem;
+    margin-bottom: 1.53488rem;
+  }
+}
+@media (max-width: 928px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000354}}
+  h1 {
+    font-size: 54.66667px;
+    font-size: 3.41667rem;
+    margin-bottom: 0.48293rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000355}}
+  h2 {
+    font-size: 43.73333px;
+    font-size: 2.73333rem;
+    margin-bottom: 0.60366rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000356}}
+  h3 {
+    font-size: 32.8px;
+    font-size: 2.05rem;
+    margin-bottom: 0.80488rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000357}}
+  h4 {
+    font-size: 21.86667px;
+    font-size: 1.36667rem;
+    margin-bottom: 1.20732rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000358}}
+  h5 {
+    font-size: 19.13333px;
+    font-size: 1.19583rem;
+    margin-bottom: 1.37979rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000359}}
+  h6 {
+    font-size: 16.4px;
+    font-size: 1.025rem;
+    margin-bottom: 1.60976rem;
+  }
+}
+@media (max-width: 58rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000354}}
+  h1 {
+    font-size: 54.66667px;
+    font-size: 3.41667rem;
+    margin-bottom: 0.48293rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000355}}
+  h2 {
+    font-size: 43.73333px;
+    font-size: 2.73333rem;
+    margin-bottom: 0.60366rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000356}}
+  h3 {
+    font-size: 32.8px;
+    font-size: 2.05rem;
+    margin-bottom: 0.80488rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000357}}
+  h4 {
+    font-size: 21.86667px;
+    font-size: 1.36667rem;
+    margin-bottom: 1.20732rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000358}}
+  h5 {
+    font-size: 19.13333px;
+    font-size: 1.19583rem;
+    margin-bottom: 1.37979rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000359}}
+  h6 {
+    font-size: 16.4px;
+    font-size: 1.025rem;
+    margin-bottom: 1.60976rem;
+  }
+}
+@media (max-width: 872px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000354}}
+  h1 {
+    font-size: 52px;
+    font-size: 3.25rem;
+    margin-bottom: 0.50769rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000355}}
+  h2 {
+    font-size: 41.6px;
+    font-size: 2.6rem;
+    margin-bottom: 0.63462rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000356}}
+  h3 {
+    font-size: 31.2px;
+    font-size: 1.95rem;
+    margin-bottom: 0.84615rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000357}}
+  h4 {
+    font-size: 20.8px;
+    font-size: 1.3rem;
+    margin-bottom: 1.26923rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000358}}
+  h5 {
+    font-size: 18.2px;
+    font-size: 1.1375rem;
+    margin-bottom: 1.45055rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000359}}
+  h6 {
+    font-size: 15.6px;
+    font-size: 0.975rem;
+    margin-bottom: 1.69231rem;
+  }
+}
+@media (max-width: 54.5rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000354}}
+  h1 {
+    font-size: 52px;
+    font-size: 3.25rem;
+    margin-bottom: 0.50769rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000355}}
+  h2 {
+    font-size: 41.6px;
+    font-size: 2.6rem;
+    margin-bottom: 0.63462rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000356}}
+  h3 {
+    font-size: 31.2px;
+    font-size: 1.95rem;
+    margin-bottom: 0.84615rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000357}}
+  h4 {
+    font-size: 20.8px;
+    font-size: 1.3rem;
+    margin-bottom: 1.26923rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000358}}
+  h5 {
+    font-size: 18.2px;
+    font-size: 1.1375rem;
+    margin-bottom: 1.45055rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000359}}
+  h6 {
+    font-size: 15.6px;
+    font-size: 0.975rem;
+    margin-bottom: 1.69231rem;
+  }
+}
+@media (max-width: 816px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000354}}
+  h1 {
+    font-size: 49.33333px;
+    font-size: 3.08333rem;
+    margin-bottom: 0.53514rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000355}}
+  h2 {
+    font-size: 39.46667px;
+    font-size: 2.46667rem;
+    margin-bottom: 0.66892rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000356}}
+  h3 {
+    font-size: 29.6px;
+    font-size: 1.85rem;
+    margin-bottom: 0.89189rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000357}}
+  h4 {
+    font-size: 19.73333px;
+    font-size: 1.23333rem;
+    margin-bottom: 1.33784rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000358}}
+  h5 {
+    font-size: 17.26667px;
+    font-size: 1.07917rem;
+    margin-bottom: 1.52896rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000359}}
+  h6 {
+    font-size: 14.8px;
+    font-size: 0.925rem;
+    margin-bottom: 1.78378rem;
+  }
+}
+@media (max-width: 51rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000354}}
+  h1 {
+    font-size: 49.33333px;
+    font-size: 3.08333rem;
+    margin-bottom: 0.53514rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000355}}
+  h2 {
+    font-size: 39.46667px;
+    font-size: 2.46667rem;
+    margin-bottom: 0.66892rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000356}}
+  h3 {
+    font-size: 29.6px;
+    font-size: 1.85rem;
+    margin-bottom: 0.89189rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000357}}
+  h4 {
+    font-size: 19.73333px;
+    font-size: 1.23333rem;
+    margin-bottom: 1.33784rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000358}}
+  h5 {
+    font-size: 17.26667px;
+    font-size: 1.07917rem;
+    margin-bottom: 1.52896rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000359}}
+  h6 {
+    font-size: 14.8px;
+    font-size: 0.925rem;
+    margin-bottom: 1.78378rem;
+  }
+}
+@media (max-width: 760px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000354}}
+  h1 {
+    font-size: 46.66667px;
+    font-size: 2.91667rem;
+    margin-bottom: 0.56571rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000355}}
+  h2 {
+    font-size: 37.33333px;
+    font-size: 2.33333rem;
+    margin-bottom: 0.70714rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000356}}
+  h3 {
+    font-size: 28px;
+    font-size: 1.75rem;
+    margin-bottom: 0.94286rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000357}}
+  h4 {
+    font-size: 18.66667px;
+    font-size: 1.16667rem;
+    margin-bottom: 1.41429rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000358}}
+  h5 {
+    font-size: 16.33333px;
+    font-size: 1.02083rem;
+    margin-bottom: 1.61633rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000359}}
+  h6 {
+    font-size: 14px;
+    font-size: 0.875rem;
+    margin-bottom: 1.88571rem;
+  }
+}
+@media (max-width: 47.5rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000354}}
+  h1 {
+    font-size: 46.66667px;
+    font-size: 2.91667rem;
+    margin-bottom: 0.56571rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000355}}
+  h2 {
+    font-size: 37.33333px;
+    font-size: 2.33333rem;
+    margin-bottom: 0.70714rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000356}}
+  h3 {
+    font-size: 28px;
+    font-size: 1.75rem;
+    margin-bottom: 0.94286rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000357}}
+  h4 {
+    font-size: 18.66667px;
+    font-size: 1.16667rem;
+    margin-bottom: 1.41429rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000358}}
+  h5 {
+    font-size: 16.33333px;
+    font-size: 1.02083rem;
+    margin-bottom: 1.61633rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000359}}
+  h6 {
+    font-size: 14px;
+    font-size: 0.875rem;
+    margin-bottom: 1.88571rem;
+  }
+}
+@media (max-width: 704px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000354}}
+  h1 {
+    font-size: 44px;
+    font-size: 2.75rem;
+    margin-bottom: 0.6rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000355}}
+  h2 {
+    font-size: 35.2px;
+    font-size: 2.2rem;
+    margin-bottom: 0.75rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000356}}
+  h3 {
+    font-size: 26.4px;
+    font-size: 1.65rem;
+    margin-bottom: 1.0rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000357}}
+  h4 {
+    font-size: 17.6px;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000358}}
+  h5 {
+    font-size: 15.4px;
+    font-size: 0.9625rem;
+    margin-bottom: 1.71429rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000359}}
+  h6 {
+    font-size: 13.2px;
+    font-size: 0.825rem;
+    margin-bottom: 2.0rem;
+  }
+}
+@media (max-width: 44rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000354}}
+  h1 {
+    font-size: 44px;
+    font-size: 2.75rem;
+    margin-bottom: 0.6rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000355}}
+  h2 {
+    font-size: 35.2px;
+    font-size: 2.2rem;
+    margin-bottom: 0.75rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000356}}
+  h3 {
+    font-size: 26.4px;
+    font-size: 1.65rem;
+    margin-bottom: 1.0rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000357}}
+  h4 {
+    font-size: 17.6px;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000358}}
+  h5 {
+    font-size: 15.4px;
+    font-size: 0.9625rem;
+    margin-bottom: 1.71429rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000359}}
+  h6 {
+    font-size: 13.2px;
+    font-size: 0.825rem;
+    margin-bottom: 2.0rem;
+  }
+}
+@media (max-width: 648px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000354}}
+  h1 {
+    font-size: 41.33333px;
+    font-size: 2.58333rem;
+    margin-bottom: 0.63871rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000355}}
+  h2 {
+    font-size: 33.06667px;
+    font-size: 2.06667rem;
+    margin-bottom: 0.79839rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000356}}
+  h3 {
+    font-size: 24.8px;
+    font-size: 1.55rem;
+    margin-bottom: 1.06452rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000357}}
+  h4 {
+    font-size: 16.53333px;
+    font-size: 1.03333rem;
+    margin-bottom: 1.59677rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000358}}
+  h5 {
+    font-size: 14.46667px;
+    font-size: 0.90417rem;
+    margin-bottom: 1.82488rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000359}}
+  h6 {
+    font-size: 12.4px;
+    font-size: 0.775rem;
+    margin-bottom: 2.12903rem;
+  }
+}
+@media (max-width: 40.5rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000354}}
+  h1 {
+    font-size: 41.33333px;
+    font-size: 2.58333rem;
+    margin-bottom: 0.63871rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000355}}
+  h2 {
+    font-size: 33.06667px;
+    font-size: 2.06667rem;
+    margin-bottom: 0.79839rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000356}}
+  h3 {
+    font-size: 24.8px;
+    font-size: 1.55rem;
+    margin-bottom: 1.06452rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000357}}
+  h4 {
+    font-size: 16.53333px;
+    font-size: 1.03333rem;
+    margin-bottom: 1.59677rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000358}}
+  h5 {
+    font-size: 14.46667px;
+    font-size: 0.90417rem;
+    margin-bottom: 1.82488rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000359}}
+  h6 {
+    font-size: 12.4px;
+    font-size: 0.775rem;
+    margin-bottom: 2.12903rem;
+  }
+}
+@media (max-width: 592px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000354}}
+  h1 {
+    font-size: 38.66667px;
+    font-size: 2.41667rem;
+    margin-bottom: 0.68276rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000355}}
+  h2 {
+    font-size: 30.93333px;
+    font-size: 1.93333rem;
+    margin-bottom: 0.85345rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000356}}
+  h3 {
+    font-size: 23.2px;
+    font-size: 1.45rem;
+    margin-bottom: 1.13793rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000357}}
+  h4 {
+    font-size: 15.46667px;
+    font-size: 0.96667rem;
+    margin-bottom: 1.7069rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000358}}
+  h5 {
+    font-size: 13.53333px;
+    font-size: 0.84583rem;
+    margin-bottom: 1.95074rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000359}}
+  h6 {
+    font-size: 11.6px;
+    font-size: 0.725rem;
+    margin-bottom: 2.27586rem;
+  }
+}
+@media (max-width: 37rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000354}}
+  h1 {
+    font-size: 38.66667px;
+    font-size: 2.41667rem;
+    margin-bottom: 0.68276rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000355}}
+  h2 {
+    font-size: 30.93333px;
+    font-size: 1.93333rem;
+    margin-bottom: 0.85345rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000356}}
+  h3 {
+    font-size: 23.2px;
+    font-size: 1.45rem;
+    margin-bottom: 1.13793rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000357}}
+  h4 {
+    font-size: 15.46667px;
+    font-size: 0.96667rem;
+    margin-bottom: 1.7069rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000358}}
+  h5 {
+    font-size: 13.53333px;
+    font-size: 0.84583rem;
+    margin-bottom: 1.95074rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000359}}
+  h6 {
+    font-size: 11.6px;
+    font-size: 0.725rem;
+    margin-bottom: 2.27586rem;
+  }
+}
+@media (max-width: 536px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000354}}
+  h1 {
+    font-size: 36px;
+    font-size: 2.25rem;
+    margin-bottom: 0.73333rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000355}}
+  h2 {
+    font-size: 28.8px;
+    font-size: 1.8rem;
+    margin-bottom: 0.91667rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000356}}
+  h3 {
+    font-size: 21.6px;
+    font-size: 1.35rem;
+    margin-bottom: 1.22222rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000357}}
+  h4 {
+    font-size: 14.4px;
+    font-size: 0.9rem;
+    margin-bottom: 1.83333rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000358}}
+  h5 {
+    font-size: 12.6px;
+    font-size: 0.7875rem;
+    margin-bottom: 2.09524rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000359}}
+  h6 {
+    font-size: 10.8px;
+    font-size: 0.675rem;
+    margin-bottom: 2.44444rem;
+  }
+}
+@media (max-width: 33.5rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000354}}
+  h1 {
+    font-size: 36px;
+    font-size: 2.25rem;
+    margin-bottom: 0.73333rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000355}}
+  h2 {
+    font-size: 28.8px;
+    font-size: 1.8rem;
+    margin-bottom: 0.91667rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000356}}
+  h3 {
+    font-size: 21.6px;
+    font-size: 1.35rem;
+    margin-bottom: 1.22222rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000357}}
+  h4 {
+    font-size: 14.4px;
+    font-size: 0.9rem;
+    margin-bottom: 1.83333rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000358}}
+  h5 {
+    font-size: 12.6px;
+    font-size: 0.7875rem;
+    margin-bottom: 2.09524rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/mixins\/_ost-typography\.scss}line{font-family:\0000359}}
+  h6 {
+    font-size: 10.8px;
+    font-size: 0.675rem;
+    margin-bottom: 2.44444rem;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/_global\.scss}line{font-family:\0000322}}
+ul.item-list {
+  margin-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/_global\.scss}line{font-family:\0000325}}
+ul.item-list li {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\000031}}
+aside#sidebar {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 320px;
+  width: 20rem;
+  padding: 32px;
+  padding: 2rem;
+  filter: Alpha(opacity=70);
+  opacity: 0.7;
+  -webkit-transition: opacity 0.38s ease-in;
+  -moz-transition: opacity 0.38s ease-in;
+  transition: opacity 0.38s ease-in;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000314}}
+aside#sidebar:hover {
+  filter: Alpha(opacity=80);
+  opacity: 0.8;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000318}}
+aside#sidebar > img {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 32px;
+  padding: 0 2rem;
+  display: block;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000327}}
+aside#sidebar nav a {
+  -webkit-transition: all 0.38s ease-out;
+  -moz-transition: all 0.38s ease-out;
+  transition: all 0.38s ease-out;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000332}}
+aside#sidebar a {
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  overflow: hidden;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000340}}
+aside#sidebar a:hover {
+  color: #255e8d;
+  text-decoration: underline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000345}}
+aside#sidebar a i {
+  margin-right: .5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000348}}
+aside#sidebar ul.menu {
+  padding-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000352}}
+aside#sidebar .social {
+  border-top: 1px solid #666;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  position: relative;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000359}}
+aside#sidebar .social a {
+  display: inline-block;
+  width: 1em;
+  padding: 0 24px 0 0;
+  padding: 0 1.5rem 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000364}}
+aside#sidebar .social a i {
+  font-size: 25.6px;
+  font-size: 1.6rem;
+  -webkit-transition: color 0.38s;
+  -moz-transition: color 0.38s;
+  transition: color 0.38s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000370}}
+aside#sidebar .social a:hover i.fa-twitter {
+  color: #00c1fb;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000371}}
+aside#sidebar .social a:hover i.fa-github {
+  color: #bbb;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000372}}
+aside#sidebar .social a:hover i.fa-code {
+  color: #226fba;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000373}}
+aside#sidebar .social a:hover i.fa-youtube {
+  color: #bbb;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000374}}
+aside#sidebar .social a:hover i.fa-linkedin {
+  color: #007bb1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000375}}
+aside#sidebar .social a:hover i.fa-gift {
+  color: #fc9a18;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000376}}
+aside#sidebar .social a:hover i.fa-flickr {
+  color: #bbb;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000377}}
+aside#sidebar .social a:hover i.fa-pinterest {
+  color: #c31c24;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000378}}
+aside#sidebar .social a:hover i.fa-gittip {
+  color: #663300;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000380}}
+aside#sidebar .social a:hover .text {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000385}}
+aside#sidebar .social a .text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 16px;
+  font-size: 1rem;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  -webkit-transform: translateY(2em);
+  -moz-transform: translateY(2em);
+  -ms-transform: translateY(2em);
+  -o-transform: translateY(2em);
+  transform: translateY(2em);
+}
+@media (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\000031}}
+  aside#sidebar {
+    padding: 16px;
+    padding: 1rem;
+  }
+}
+@media (max-width: 50rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\000031}}
+  aside#sidebar {
+    padding: 16px;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 1040px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\00003104}}
+  aside#sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}
+@media (max-width: 65rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\00003104}}
+  aside#sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\000031}}
+section#main {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: opacity 0.38s ease-out;
+  -moz-transition: opacity 0.38s ease-out;
+  transition: opacity 0.38s ease-out;
+  margin-left: 320px;
+  margin-left: 20rem;
+  padding: 32px;
+  padding: 2rem;
+  max-width: 52em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000310}}
+section#main .body ul.item-list .date {
+  width: 10em;
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000316}}
+section#main .body a {
+  -webkit-transition: all 0.38s ease-out;
+  -moz-transition: all 0.38s ease-out;
+  transition: all 0.38s ease-out;
+  color: #c58805;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000321}}
+section#main .body a:hover, section#main .body a:active, section#main .body a.active {
+  color: #936604;
+  text-decoration: underline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000330}}
+section#main article header .byline {
+  color: #777;
+  margin: 1em 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000334}}
+section#main article header .byline i {
+  color: #c58805;
+  padding: 0 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000340}}
+section#main article header .social {
+  margin: 1em 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000345}}
+section#main article .body {
+  font-family: "Kaushan Script", cursive;
+  margin: 1em 0 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000354}}
+section#main article .body p + p {
+  margin-top: -1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000358}}
+section#main article .body img {
+  border: 1px solid #444;
+  padding: 2px;
+  border-radius: .5em;
+  width: 38%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000364}}
+section#main article .body img:nth-child(odd) {
+  float: right;
+  margin: 0 0 1em 2em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000368}}
+section#main article .body img:nth-child(even) {
+  float: left;
+  margin: 0 2em 1em 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000373}}
+section#main article .body img.center {
+  float: none;
+  display: block;
+  margin: 1em auto;
+  width: auto;
+  max-width: 90%;
+}
+@media (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\000031}}
+  section#main {
+    padding: 16px;
+    padding: 1rem;
+  }
+}
+@media (max-width: 50rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\000031}}
+  section#main {
+    padding: 16px;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 1040px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000391}}
+  section#main {
+    margin-left: 0;
+  }
+}
+@media (max-width: 65rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000391}}
+  section#main {
+    margin-left: 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_facebook-share\.scss}line{font-family:\000031}}
+a.facebook-share {
+  font-size: 8pt;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  color: #222;
+  font-weight: bold;
+  padding: 0 3px 0 2px;
+  display: inline-block;
+  background-color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #dddddd));
+  background-image: -webkit-linear-gradient(top, white, #dddddd);
+  background-image: linear-gradient(to bottom,white, #dddddd);
+  text-decoration: none;
+  line-height: 0;
+  vertical-align: top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_facebook-share\.scss}line{font-family:\0000315}}
+a.facebook-share:hover {
+  background-color: #f6f6f6;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f6f6f6), color-stop(100%, #d6d6d6));
+  background-image: -webkit-linear-gradient(top, #f6f6f6, #d6d6d6);
+  background-image: linear-gradient(to bottom,#f6f6f6, #d6d6d6);
+  border-color: #b6b6b6;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_facebook-share\.scss}line{font-family:\0000320}}
+a.facebook-share i {
+  color: #3f6497;
+  margin-right: 3px;
+  font-size: 14pt;
+  vertical-align: middle;
+  line-height: 20px;
+  margin-bottom: -1px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_facebook-share\.scss}line{font-family:\0000329}}
+a.facebook-share span {
+  vertical-align: middle;
+}

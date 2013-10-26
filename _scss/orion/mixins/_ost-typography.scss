@@ -1,0 +1,78 @@
+// Custom typographical mixins
+// Dependencies: typeplate variables
+
+// REM sizing with a px fallback for older browsers.
+@mixin x-rem($property, $values) {
+  // Defaults
+  $font-base: 18 !default;
+
+  // Empty list for all values in px
+  $px-values: ();
+  $rem-values: ();
+
+  // Iterate over entries
+  @each $value in $values {
+    // If the value is zero, return 0
+    @if $value == 0 or type_of($value) != number {
+      $px-values: append($px-values, $value);
+      $rem-values: append($rem-values, $value);
+    }
+    // If the value is not zero, convert it from px to rem
+    @else {
+      $px-values: append($px-values, #{($value * $font-base)}px);
+      $rem-values: append($rem-values, #{$value}rem);
+    }
+  }
+
+  // Return the property and its list of converted values
+  #{$property}: #{$px-values};
+  #{$property}: #{$rem-values};
+}
+
+// Create media breakpoints with rem units.
+@mixin rem-breakpoint($prop, $value) {
+  // Defaults
+  $font-base: 18 !default;
+
+  @media(#{$prop}: #{($value * $font-base)}px) {
+    @content
+  }
+  @media(#{$prop}: #{$value}rem) {
+    @content
+  }
+}
+
+// Apply certain styles to all headers.
+@mixin headers {
+  h1,h2,h3,h4,h5,h6 {
+    @content;
+  }
+}
+
+// Scale Header Sizes
+@mixin header-font-scale($scalar: 1) {
+  h1 {@include type-scale($alpha   * $scalar, $font-base, '#{$type-scale-unit-value}', $measure);}
+  h2 {@include type-scale($beta    * $scalar, $font-base, '#{$type-scale-unit-value}', $measure);}
+  h3 {@include type-scale($gamma   * $scalar, $font-base, '#{$type-scale-unit-value}', $measure);}
+  h4 {@include type-scale($delta   * $scalar, $font-base, '#{$type-scale-unit-value}', $measure);}
+  h5 {@include type-scale($epsilon * $scalar, $font-base, '#{$type-scale-unit-value}', $measure);}
+  h6 {@include type-scale($zeta    * $scalar, $font-base, '#{$type-scale-unit-value}', $measure);}
+}
+
+// Auto-scale Header Font Sizes
+// @param $start - The rem width to start scaling. (First breakpoint)
+// @param $stop  - The rem width to stop scaling.  (Last breakpoint)
+@mixin header-scale($start, $stop: 30, $interval: 9, $min-scale: 0.60) {
+  $itt: 1;
+
+  @while $itt < $interval {
+    $bp: ((($start - $stop) / $interval) * ($interval - $itt)) + $stop;
+    $scale: 1 - ((1 - $min-scale) / ($interval - 1)) * $itt;
+
+    @include rem-breakpoint(max-width, $bp) {
+      @include header-font-scale($scale);
+    }
+
+    $itt: $itt + 1
+  }
+}

@@ -1,0 +1,65 @@
+name: Chris Albrecht
+markdown: redcarpet
+pygments: true
+
+js:
+  lib:
+    - //codeorigin.jquery.com/jquery-1.10.2.min.js
+  local:
+    - /js/compass.min.js
+
+css:
+  - /css/gonzo.css
+  - //netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css
+
+ga: 
+  - {id: id1, domain: domain1.com}
+
+disqus:
+  shortname: chrisalbrecht
+
+social:
+  - {icon: 'fa-twitter',
+     url:  'http://twitter.com/ChrisAlbrecht#intent=follow',
+     text: 'Follow me on Twitter'
+  }
+  - {icon: 'fa-github',
+     url:  'https://github.com/KeyboardCowboy',
+     text: 'Fork me on GitHub'
+  }
+  - {icon: 'fa-code',
+     url:  'http://drupal.org/user/176328',
+     text: 'Find me on Drupal.org'
+  }
+  - {icon: 'fa-gittip',
+     url:  'https://www.gittip.com/ChrisAlbrecht',
+     text: 'Support me on GitTip'
+  }
+  - {icon: 'fa-youtube',
+     url:  'http://www.youtube.com/user/KeyboardCowboy5',
+     text: 'Watch me on YouTube'
+  }
+  - {icon: 'fa-linkedin',
+     url:  'http://www.linkedin.com/in/calbrecht',
+     text: 'Annoy me on LinkedIn'
+  }
+  - {icon: 'fa-gift',
+     url:  'http://amzn.com/w/1ZKPWMKJ9IU9E',
+     text: 'Bribe me from Amazon'
+  }
+  - {icon: 'fa-flickr',
+     url:  'http://www.flickr.com/photos/chrisalbrecht/',
+     text: 'Look at me on Flickr'
+  }
+  - {icon: 'fa-pinterest',
+     url:  'http://www.pinterest.com/keyboardcowboy5',
+     text: 'Pin me on Pinterest'
+  }
+
+menus:
+  main:
+    - {text: Home, href: /}
+    - {text: Blog, href: /blog}
+    - {text: About, href: /about}
+
+ignore: ['codekit-config.json']

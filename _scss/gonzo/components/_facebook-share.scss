@@ -1,0 +1,30 @@
+a.facebook-share {
+  font-size: 8pt;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  color: #222;
+  font-weight: bold;
+  padding: 0 3px 0 2px;
+  display: inline-block;
+  @include linear-gradient(top, #fff, #ddd);
+  text-decoration: none;
+  line-height: 0;
+  vertical-align: top;
+
+  &:hover {
+    @include linear-gradient(top, #f6f6f6, #d6d6d6);
+    border-color: #b6b6b6;
+  }
+
+  i {
+    color: $facebook-light;
+    margin-right: 3px;
+    font-size: 14pt;
+    vertical-align: middle;
+    line-height: 20px;
+    margin-bottom: -1px;
+  }
+
+  span {vertical-align: middle;}
+}

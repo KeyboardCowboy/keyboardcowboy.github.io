@@ -1,0 +1,14 @@
+---
+title: 'Blog'
+layout: page
+classes:
+  body: blog
+---
+<ul class="item-list">
+  {% for post in site.posts %}
+    <li>
+      <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
+      <a href="{{ post.url }}"><span class="title">{{ post.title }}</span></a>
+    </li>
+  {% endfor %}
+</ul>

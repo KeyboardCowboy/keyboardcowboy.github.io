@@ -1,0 +1,29 @@
+---
+---
+{% include global/header.html %}
+      {% include global/sidebar.html %}
+      <section id="main">
+        <article>
+          <header>
+            <h1 id="title">{{ page.title }}</h1>
+            <div class="byline">
+              {{ page.date | date: "%A, %B %d, %Y" }}<i class="fa fa-compass"></i><span class="hide">Written by</span> {{ page.author }}
+            </div>
+            <div class="share">
+              {% include social/twitter-share.html %}
+              {% include social/facebook-share.html %}
+            </div>
+          </header>
+          <div class="body">
+            {{ content }}
+          </div>
+          <footer>
+            <div class="share">
+              {% include social/twitter-share.html %}
+              {% include social/facebook-share.html %}
+            </div>
+          </footer>
+          {% include social/disqus.html %}
+        </article>
+      </section>
+{% include global/footer.html %}

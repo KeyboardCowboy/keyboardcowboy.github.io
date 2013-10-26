@@ -1,0 +1,109 @@
+aside#sidebar {
+  @include box-sizing(border-box);
+  @include x-rem(width, $sidebar-width);
+  @include x-rem(padding, $sidebar-padding);
+  @include opacity(.7);
+  @include transition(opacity .38s ease-in);
+
+  background: rgba(black, .9);
+  color: white;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+
+  &:hover {
+    @include opacity(.8);
+  }
+
+  > img {
+    @include box-sizing(border-box);
+    @include x-rem(padding, 0 2);
+
+    display: block;
+    width: 100%;
+  }
+
+  nav {
+    a {
+      @include transition(all .38s ease-out);
+    }
+  }
+
+  a {
+    @include x-rem(font-size, 1.2);
+
+    overflow: hidden;
+    color: white;
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+      color: $blue;
+      text-decoration: underline;
+    }
+
+    i {margin-right: .5em;}
+  }
+
+  ul.menu {
+    padding-left: 0;
+  }
+
+  .social {
+    border-top: 1px solid #666;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    position: relative;
+    overflow: hidden;
+
+    a {
+      display: inline-block;
+      width: 1em;
+      @include x-rem(padding, 0 1.5 0 0);
+
+      i {
+        @include x-rem(font-size, 1.6);
+        @include transition(color .38s);
+      }
+
+      &:hover {
+        i.fa-twitter   {color: $twitter-dark;}
+        i.fa-github    {color: #bbb;}
+        i.fa-code      {color: $drupal-light;}
+        i.fa-youtube   {color: #bbb;}
+        i.fa-linkedin  {color: $linkedin;}
+        i.fa-gift      {color: $amazon;}
+        i.fa-flickr    {color: #bbb;}
+        i.fa-pinterest {color: $pinterest-dark;}
+        i.fa-gittip    {color: $gittip;}
+
+        .text {
+          @include transform(translateY(0));
+        }
+      }
+
+      .text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        @include x-rem(font-size, 1);
+
+        @include transition(all .2s ease-in);
+        @include transform(translateY(2em));
+      }
+    }
+  }
+
+  @include rem-breakpoint(max-width, 50) {
+    @include x-rem(padding, $sidebar-padding / 2);
+  }
+}
+
+// Breakpoints
+@include rem-breakpoint(max-width, $col-break) {
+  aside#sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}

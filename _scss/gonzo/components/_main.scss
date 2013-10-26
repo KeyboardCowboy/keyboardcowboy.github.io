@@ -1,0 +1,94 @@
+section#main {
+  @include box-sizing(border-box);
+  @include transition(opacity .38s ease-out);
+  @include x-rem(margin-left, $sidebar-width);
+  @include x-rem(padding, $main-padding);
+  max-width: $max-body-width;
+
+  .body {
+    ul.item-list {
+      .date {
+        width: 10em;
+        display: inline-block;
+      }
+    }
+
+    a {
+      @include transition(all .38s ease-out);
+      color: $gold;
+      text-decoration: none;
+
+      &:hover, &:active, &.active {
+        color: darken($gold, 10%);
+        text-decoration: underline;
+      }
+    }
+  }
+
+  article {
+    header {
+      .byline {
+        color: #777;
+        margin: 1em 0;
+
+        i {
+          color: $gold;
+          padding: 0 1em;
+        }
+      }
+
+      .social {
+        margin: 1em 0;
+      }
+    }
+
+    .body {
+      font-family: $cursive;
+      margin: 1em 0 0 0;
+
+      h1 + p,
+      p:first-child {
+        @extend .drop-cap;
+      }
+
+      p + p {
+        margin-top: -1em;
+      }
+
+      img {
+        border: 1px solid #444;
+        padding: 2px;
+        border-radius: .5em;
+        width: 38%;
+
+        &:nth-child(odd) {
+          float: right;
+          margin: 0 0 1em 2em;
+        }
+        &:nth-child(even) {
+          float: left;
+          margin: 0 2em 1em 0;
+        }
+
+        &.center {
+          float: none;
+          display: block;
+          margin: 1em auto;
+          width: auto;
+          max-width: 90%;
+        }
+      }
+    }
+  }
+
+  @include rem-breakpoint(max-width, 50) {
+    @include x-rem(padding, $main-padding / 2);
+  }
+}
+
+// Breakpoints
+@include rem-breakpoint(max-width, $col-break) {
+  section#main {
+    margin-left: 0;
+  }
+}

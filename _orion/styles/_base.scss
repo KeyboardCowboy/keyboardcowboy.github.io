@@ -1,0 +1,13 @@
+//- Global base styles.  No assumptions.
+@charset "UTF-8";
+
+* {@include box-sizing(border-box);}
+
+body {margin: 0 auto;}
+
+a {outline: 0;}
+
+nav ul li {list-style: none;}
+
+// http://css-tricks.com/fixing-tables-long-strings/
+table {table-layout: fixed;}

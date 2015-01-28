@@ -1,4 +1,19 @@
 @charset "UTF-8";
+nav#nav-main ul {
+  margin: 0;
+  padding: 0; }
+  nav#nav-main ul li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -5px; }
+    nav#nav-main ul li a {
+      display: inline-block;
+      line-height: normal; }
+    nav#nav-main ul li.last a {
+      border-right: none; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -640,4 +655,6 @@ p + .drop-cap {
  * Extend this object into your markup.
  *
  */
-/* No files to import found in styles/components/* */
+#site-header {
+  border-bottom: 1px solid #ccc;
+  background-color: #eee; }

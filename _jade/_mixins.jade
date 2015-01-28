@@ -2,3 +2,8 @@ mixin social_link(icon, text, href)
   a(href="#{href}", target='_blank')
     i(class="#{icon}")
     span #{text}
+
+mixin nav(id)
+  nav(id="#{id}", role="navigation")
+    ul
+      block

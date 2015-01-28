@@ -1,7 +1,8 @@
 //- Create a CSS element
-mixin css(file, media)
+mixin css(file, media, jekyll)
   - media = media || 'all'
-  link(type="text/css", rel="stylesheet", media="#{media}", href="#{file}.css")
+  - href = jekyll ? "{{ '" + file + "' | prepend: site.baseurl }}" : file
+  link(type="text/css", rel="stylesheet", media="#{media}", href="#{href}.css")
 
 
 //- Create a Script element
@@ -21,14 +22,12 @@ mixin kitten(width, height, color, classes)
     span.photo
       img(src="http://placekitten.com/g/#{width}/#{height}", alt="Here's a cute kitten.", title="Here's a cute kitten.", class="#{classes}")
 
-
 //- Social Links
 mixin social_link(icon, text, href)
   a(href="#{href}", target='_blank')
     i(class="#{icon}")
     span #{text}
 
-      
 //- Auto generate placeholder links
 mixin links(num, title, href)
   - num   = num || 3

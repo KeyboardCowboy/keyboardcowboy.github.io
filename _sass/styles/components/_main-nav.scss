@@ -1,5 +1,15 @@
 nav#nav-main {
   ul {
     @extend %inline-menu;
+    text-align: center;
+  }
+}
+
+#logo {
+  a {
+    width: 50px;
+  }
+  img {
+    width: 100%;
   }
 }

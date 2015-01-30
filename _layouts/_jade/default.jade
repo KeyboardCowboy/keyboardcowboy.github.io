@@ -1,0 +1,14 @@
+include ../../_jade/_base
+doctype html
+html
+  | {% include head.html %}
+  body
+    div#under
+      .inner
+        h2 Hello there
+        +p(5, 10)
+      | {% include header.html %}
+
+    div#wrapper
+      | {{ content }}
+      | {% include footer.html %}

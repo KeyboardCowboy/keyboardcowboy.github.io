@@ -1,0 +1,9 @@
+extends ../../_orion/jade/blocks/_head
+include ../../_jade/_base
+
+block css
+  +css('css/style', null, true)
+
+block js
+  +js('https://code.jquery.com/jquery-2.1.3.min.js')
+  +js('js/chris.min.js', true)

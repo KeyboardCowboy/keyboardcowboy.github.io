@@ -46,7 +46,7 @@ mixin p(sen,cnt)
       - s += pool[ind]
     - }
     - p.push(s);
- - }
+  - }
   - for (i in p) {
     p #{p[i]}
   - }
@@ -61,7 +61,7 @@ mixin checks(num, grp, label)
     - id = grp + '-' + i
     div.form-item.checkbox
     input(type='checkbox', name=id, id=id)
-      label(for=id) #{label} #{i}
+    label(for=id) #{label} #{i}
   - }
 
 //- Generate options for a select list

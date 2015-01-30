@@ -1,0 +1,14 @@
+#main {
+  ul.item-list li {
+    line-height: 1.3em;
+
+    span {
+      min-width: 10em;
+      width: 38%;
+    }
+    a {
+      display: inline-block;
+      width: 62%;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+
+// Breakpoints
+@include rem-breakpoint(max-width, $soft-break) {
+  section#main {
+    margin-left: 38%;
+
+    ul.item-list {
+      padding-left: 0;
+    }
+  }
+
+  aside#sidebar {
+    width: 38%;
+  }
+}
+@include rem-breakpoint(max-width, $hard-break) {
+  section#main {
+    margin-left: 0;
+  }
+
+  aside#sidebar {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+
+    > img {
+      display: none;
+    }
+  }
+}
+/*@include rem-breakpoint(max-width, 50) {
+  section#main {
+    @include x-rem(padding, $main-padding / 2);
+  }
+  aside#sidebar {
+    @include x-rem(padding, $sidebar-padding / 2);
+  }
+}*/

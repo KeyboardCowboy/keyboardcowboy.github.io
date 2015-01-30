@@ -1,12 +1,13 @@
 section#main {
   @include box-sizing(border-box);
-  @include transition(opacity .38s ease-out);
-  @include x-rem(margin-left, $sidebar-width);
+  //@include transition(opacity .2s ease-out);
+  @include x-rem(margin-left, $max-sidebar-width);
   @include x-rem(padding, $main-padding);
-  max-width: $max-body-width;
+  @include x-rem(max-width, $max-body-width);
 
   .body {
     ul.item-list {
+      time,
       .date {
         width: 10em;
         display: inline-block;
@@ -14,12 +15,12 @@ section#main {
     }
 
     a {
-      @include transition(all .38s ease-out);
+      @include transition(all .2s ease-out);
       color: $gold;
       text-decoration: none;
 
       &:hover, &:active, &.active {
-        color: darken($gold, 10%);
+        color: lighten($gold, 5%);
         text-decoration: underline;
       }
     }
@@ -79,16 +80,5 @@ section#main {
         }
       }
     }
-  }
-
-  @include rem-breakpoint(max-width, 50) {
-    @include x-rem(padding, $main-padding / 2);
-  }
-}
-
-// Breakpoints
-@include rem-breakpoint(max-width, $col-break) {
-  section#main {
-    margin-left: 0;
   }
 }

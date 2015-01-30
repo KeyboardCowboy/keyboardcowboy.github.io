@@ -8,6 +8,7 @@ body {
 }
 
 #page {
+  @include box-sizing(border-box);
   background: transparent url('/images/noisy.png') 0 0 repeat;
   min-height: 100%;
 }

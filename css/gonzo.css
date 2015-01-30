@@ -840,7 +840,7 @@ a {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/orion\/styles\/_base\.scss}line{font-family:\0000324}}
-.hide {
+.invisible {
   height: 0;
   overflow: hidden;
   position: absolute;
@@ -905,6 +905,9 @@ body {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/_global\.scss}line{font-family:\0000310}}
 #page {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   background: transparent url("/images/noisy.png") 0 0 repeat;
   min-height: 100%;
 }
@@ -1688,11 +1691,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 2.44444rem;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/_global\.scss}line{font-family:\0000322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/_global\.scss}line{font-family:\0000323}}
 ul.item-list {
   margin-left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/_global\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/_global\.scss}line{font-family:\0000326}}
 ul.item-list li {
   list-style: none;
 }
@@ -1702,27 +1705,33 @@ aside#sidebar {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 320px;
-  width: 20rem;
+  max-width: 320px;
+  max-width: 20rem;
   padding: 32px;
   padding: 2rem;
-  filter: Alpha(opacity=70);
-  opacity: 0.7;
-  -webkit-transition: opacity 0.38s ease-in;
-  -moz-transition: opacity 0.38s ease-in;
-  transition: opacity 0.38s ease-in;
-  background: rgba(0, 0, 0, 0.9);
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+  background: rgba(0, 0, 0, 0.7);
   color: white;
   position: fixed;
   height: 100%;
   overflow: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000314}}
-aside#sidebar:hover {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000313}}
+aside#sidebar > * {
+  filter: Alpha(opacity=40);
+  opacity: 0.4;
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000319}}
+aside#sidebar:hover > * {
   filter: Alpha(opacity=80);
   opacity: 0.8;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000324}}
 aside#sidebar > img {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1732,13 +1741,13 @@ aside#sidebar > img {
   display: block;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000333}}
 aside#sidebar nav a {
-  -webkit-transition: all 0.38s ease-out;
-  -moz-transition: all 0.38s ease-out;
-  transition: all 0.38s ease-out;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000338}}
 aside#sidebar a {
   font-size: 19.2px;
   font-size: 1.2rem;
@@ -1747,20 +1756,20 @@ aside#sidebar a {
   text-decoration: none;
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000346}}
 aside#sidebar a:hover {
-  color: #255e8d;
+  color: #c58805;
   text-decoration: underline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000351}}
 aside#sidebar a i {
   margin-right: .5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000354}}
 aside#sidebar ul.menu {
   padding-left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000358}}
 aside#sidebar .social {
   border-top: 1px solid #666;
   padding-top: 1em;
@@ -1768,58 +1777,58 @@ aside#sidebar .social {
   position: relative;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000365}}
 aside#sidebar .social a {
   display: inline-block;
   width: 1em;
   padding: 0 24px 0 0;
   padding: 0 1.5rem 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000370}}
 aside#sidebar .social a i {
   font-size: 25.6px;
   font-size: 1.6rem;
-  -webkit-transition: color 0.38s;
-  -moz-transition: color 0.38s;
-  transition: color 0.38s;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  transition: color 0.2s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000376}}
 aside#sidebar .social a:hover i.fa-twitter {
   color: #00c1fb;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000377}}
 aside#sidebar .social a:hover i.fa-github {
   color: #bbb;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000378}}
 aside#sidebar .social a:hover i.fa-code {
   color: #226fba;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000379}}
 aside#sidebar .social a:hover i.fa-youtube {
   color: #bbb;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000380}}
 aside#sidebar .social a:hover i.fa-linkedin {
   color: #007bb1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000381}}
 aside#sidebar .social a:hover i.fa-gift {
   color: #fc9a18;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000382}}
 aside#sidebar .social a:hover i.fa-flickr {
   color: #bbb;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000383}}
 aside#sidebar .social a:hover i.fa-pinterest {
   color: #c31c24;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000384}}
 aside#sidebar .social a:hover i.fa-gittip {
   color: #663300;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000386}}
 aside#sidebar .social a:hover .text {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -1827,11 +1836,12 @@ aside#sidebar .social a:hover .text {
   -o-transform: translateY(0);
   transform: translateY(0);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\0000391}}
 aside#sidebar .social a .text {
   position: absolute;
   bottom: 0;
   left: 0;
+  color: #c58805;
   font-size: 16px;
   font-size: 1rem;
   -webkit-transition: all 0.2s ease-in;
@@ -1843,110 +1853,79 @@ aside#sidebar .social a .text {
   -o-transform: translateY(2em);
   transform: translateY(2em);
 }
-@media (max-width: 800px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\000031}}
-  aside#sidebar {
-    padding: 16px;
-    padding: 1rem;
-  }
-}
-@media (max-width: 50rem) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\000031}}
-  aside#sidebar {
-    padding: 16px;
-    padding: 1rem;
-  }
-}
 
-@media (max-width: 1040px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\00003104}}
-  aside#sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-}
-@media (max-width: 65rem) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_sidebar\.scss}line{font-family:\00003104}}
-  aside#sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-}
 @media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\000031}}
 section#main {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: opacity 0.38s ease-out;
-  -moz-transition: opacity 0.38s ease-out;
-  transition: opacity 0.38s ease-out;
   margin-left: 320px;
   margin-left: 20rem;
   padding: 32px;
   padding: 2rem;
-  max-width: 52em;
+  max-width: 832px;
+  max-width: 52rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000311}}
+section#main .body ul.item-list time,
 section#main .body ul.item-list .date {
   width: 10em;
   display: inline-block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000317}}
 section#main .body a {
-  -webkit-transition: all 0.38s ease-out;
-  -moz-transition: all 0.38s ease-out;
-  transition: all 0.38s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
   color: #c58805;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000322}}
 section#main .body a:hover, section#main .body a:active, section#main .body a.active {
-  color: #936604;
+  color: #de9906;
   text-decoration: underline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000331}}
 section#main article header .byline {
   color: #777;
   margin: 1em 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000335}}
 section#main article header .byline i {
   color: #c58805;
   padding: 0 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000341}}
 section#main article header .social {
   margin: 1em 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000346}}
 section#main article .body {
   font-family: "Kaushan Script", cursive;
   margin: 1em 0 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000355}}
 section#main article .body p + p {
   margin-top: -1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000359}}
 section#main article .body img {
   border: 1px solid #444;
   padding: 2px;
   border-radius: .5em;
   width: 38%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000365}}
 section#main article .body img:nth-child(odd) {
   float: right;
   margin: 0 0 1em 2em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000369}}
 section#main article .body img:nth-child(even) {
   float: left;
   margin: 0 2em 1em 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000374}}
 section#main article .body img.center {
   float: none;
   display: block;
@@ -1954,33 +1933,7 @@ section#main article .body img.center {
   width: auto;
   max-width: 90%;
 }
-@media (max-width: 800px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\000031}}
-  section#main {
-    padding: 16px;
-    padding: 1rem;
-  }
-}
-@media (max-width: 50rem) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\000031}}
-  section#main {
-    padding: 16px;
-    padding: 1rem;
-  }
-}
 
-@media (max-width: 1040px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000391}}
-  section#main {
-    margin-left: 0;
-  }
-}
-@media (max-width: 65rem) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_main\.scss}line{font-family:\0000391}}
-  section#main {
-    margin-left: 0;
-  }
-}
 @media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_facebook-share\.scss}line{font-family:\000031}}
 a.facebook-share {
   font-size: 8pt;
@@ -2020,3 +1973,93 @@ a.facebook-share i {
 a.facebook-share span {
   vertical-align: middle;
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/pages\/_blog-landing\.scss}line{font-family:\000032}}
+#main ul.item-list li {
+  line-height: 1.3em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/pages\/_blog-landing\.scss}line{font-family:\000035}}
+#main ul.item-list li span {
+  min-width: 10em;
+  width: 38%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/pages\/_blog-landing\.scss}line{font-family:\000039}}
+#main ul.item-list li a {
+  display: inline-block;
+  width: 62%;
+}
+
+@media (max-width: 1152px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_breakpoints\.scss}line{font-family:\000034}}
+  section#main {
+    margin-left: 38%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_breakpoints\.scss}line{font-family:\000037}}
+  section#main ul.item-list {
+    padding-left: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_breakpoints\.scss}line{font-family:\0000312}}
+  aside#sidebar {
+    width: 38%;
+  }
+}
+@media (max-width: 72rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_breakpoints\.scss}line{font-family:\000034}}
+  section#main {
+    margin-left: 38%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_breakpoints\.scss}line{font-family:\000037}}
+  section#main ul.item-list {
+    padding-left: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_breakpoints\.scss}line{font-family:\0000312}}
+  aside#sidebar {
+    width: 38%;
+  }
+}
+@media (max-width: 656px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_breakpoints\.scss}line{font-family:\0000317}}
+  section#main {
+    margin-left: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_breakpoints\.scss}line{font-family:\0000321}}
+  aside#sidebar {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_breakpoints\.scss}line{font-family:\0000327}}
+  aside#sidebar > img {
+    display: none;
+  }
+}
+@media (max-width: 41rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_breakpoints\.scss}line{font-family:\0000317}}
+  section#main {
+    margin-left: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_breakpoints\.scss}line{font-family:\0000321}}
+  aside#sidebar {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/private\/var\/www\/htdocs\/ca\/_scss\/gonzo\/components\/_breakpoints\.scss}line{font-family:\0000327}}
+  aside#sidebar > img {
+    display: none;
+  }
+}
+/*@include rem-breakpoint(max-width, 50) {
+  section#main {
+    @include x-rem(padding, $main-padding / 2);
+  }
+  aside#sidebar {
+    @include x-rem(padding, $sidebar-padding / 2);
+  }
+}*/

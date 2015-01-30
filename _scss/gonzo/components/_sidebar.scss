@@ -1,18 +1,24 @@
 aside#sidebar {
   @include box-sizing(border-box);
-  @include x-rem(width, $sidebar-width);
+  @include x-rem(max-width, $max-sidebar-width);
   @include x-rem(padding, $sidebar-padding);
-  @include opacity(.7);
-  @include transition(opacity .38s ease-in);
+  @include transition(opacity .2s ease-in);
 
-  background: rgba(black, .9);
+  background: rgba(black, .7);
   color: white;
   position: fixed;
   height: 100%;
   overflow: auto;
 
+  > * {
+    @include opacity(.4);
+    @include transition(opacity .2s ease-in);
+  }
+
   &:hover {
-    @include opacity(.8);
+    > * {
+      @include opacity(.8);
+    }
   }
 
   > img {
@@ -25,7 +31,7 @@ aside#sidebar {
 
   nav {
     a {
-      @include transition(all .38s ease-out);
+      @include transition(color .2s ease-out);
     }
   }
 
@@ -38,7 +44,7 @@ aside#sidebar {
     display: block;
 
     &:hover {
-      color: $blue;
+      color: $gold;
       text-decoration: underline;
     }
 
@@ -63,7 +69,7 @@ aside#sidebar {
 
       i {
         @include x-rem(font-size, 1.6);
-        @include transition(color .38s);
+        @include transition(color .2s);
       }
 
       &:hover {
@@ -86,6 +92,7 @@ aside#sidebar {
         position: absolute;
         bottom: 0;
         left: 0;
+        color: $gold;
         @include x-rem(font-size, 1);
 
         @include transition(all .2s ease-in);
@@ -93,17 +100,5 @@ aside#sidebar {
       }
     }
   }
-
-  @include rem-breakpoint(max-width, 50) {
-    @include x-rem(padding, $sidebar-padding / 2);
-  }
 }
 
-// Breakpoints
-@include rem-breakpoint(max-width, $col-break) {
-  aside#sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-}

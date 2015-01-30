@@ -3,11 +3,16 @@ $blue: #255E8D;
 $gold: #c58805;
 
 // Structure
-$sidebar-width:   20; // Units in rem
-$max-body-width:  52em;
-$sidebar-padding: 2;
-$main-padding:    2;
-$col-break:       65;
+$max-sidebar-width: 20; // Units in rem
+$min-sidebar-width: 11;
+$max-body-width:    52;
+$min-body-width:    30;
+$sidebar-padding:   2;
+$main-padding:      2;
+$col-break:         65;
+
+$soft-break:        $max-sidebar-width + $max-body-width;
+$hard-break:        $min-sidebar-width + $min-body-width;
 
 // Typography
 $font-base: 16;

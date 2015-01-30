@@ -7,7 +7,7 @@
           <header>
             <h1 id="title">{{ page.title }}</h1>
             <div class="byline">
-              {{ page.date | date: "%A, %B %d, %Y" }}<i class="fa fa-compass"></i><span class="hide">Written by</span> {{ page.author }}
+              {{ page.date | date: "%A, %B %d, %Y" }}<i class="fa fa-compass"></i><span class="invisible">Written by</span> {{ page.author }}
             </div>
             <div class="share">
               {% include social/twitter-share.html %}

@@ -1,4 +1,4 @@
 
 <ul class="posts">{% for post in site.posts %}
-  <li><span class="post--meta">{{ post.date | date: "%b %-d, %Y" }}</span><span class="post--title"><a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></span></li>{% endfor %}
+  <li><span class="post--cat">[{{ post.categories }}]</span><span class="post--date">{{ post.date | date: "%b %-d, %Y" }}</span><span class="post--title"><a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></span></li>{% endfor %}
 </ul>

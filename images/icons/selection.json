@@ -1,0 +1,53 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"M640 530.286q0 6.857-5.714 13.714l-182.286 182.286q-6.286 5.143-13.143 5.143t-13.143-5.143l-182.857-182.857q-8.571-9.143-4-20 4.571-11.429 17.143-11.429h109.714v-201.143q0-8 5.143-13.143t13.143-5.143h109.714q8 0 13.143 5.143t5.143 13.143v201.143h109.714q8 0 13.143 5.143t5.143 13.143zM438.857 201.143q-84.571 0-156 41.714t-113.143 113.143-41.714 156 41.714 156 113.143 113.143 156 41.714 156-41.714 113.143-113.143 41.714-156-41.714-156-113.143-113.143-156-41.714zM877.714 512q0 119.429-58.857 220.286t-159.714 159.714-220.286 58.857-220.286-58.857-159.714-159.714-58.857-220.286 58.857-220.286 159.714-159.714 220.286-58.857 220.286 58.857 159.714 159.714 58.857 220.286z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"arrow-circle-o-down"
+				],
+				"defaultCode": 61466,
+				"grid": 14
+			},
+			"attrs": [],
+			"properties": {
+				"name": "arrow-circle-o-down",
+				"order": 1,
+				"prevSize": 28
+			},
+			"setIdx": 0,
+			"setId": 1,
+			"iconIdx": 25
+		}
+	],
+	"height": 1024,
+	"preferences": {
+		"showGlyphs": true,
+		"showQuickUse": true,
+		"showQuickUse2": true,
+		"showSVGs": true,
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {},
+			"metrics": {
+				"emSize": 1024,
+				"baseline": 6.25,
+				"whitespace": 50
+			}
+		},
+		"imagePref": {
+			"prefix": "icon-",
+			"png": true,
+			"useClassSelector": true,
+			"color": 4473924,
+			"bgColor": 16777215,
+			"classSelector": ".icon"
+		},
+		"historySize": 100
+	}
+}

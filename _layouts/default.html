@@ -3,8 +3,9 @@
   <body>
     <div id="under">
       <div class="inner">
-        <h2>Main Menu</h2>{% include summary.html %}
-      </div>{% include header.html %}
+        <h2>Main Menu</h2>{% include header.html %}
+        {% include summary.html %}
+      </div>{% include title-bar.html %}
     </div>
     <div id="wrapper">
       {{ content }}

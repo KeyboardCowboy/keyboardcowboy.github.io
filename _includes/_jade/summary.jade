@@ -1,7 +1,9 @@
 ul.posts
   | {% for post in site.posts %}
   li
-    span.post--meta
+    span.post--cat
+      | [{{ post.categories }}]
+    span.post--date
       | {{ post.date | date: "%b %-d, %Y" }}
     span.post--title
       a(href="{{ post.url | prepend: site.baseurl }}") {{post.title}}

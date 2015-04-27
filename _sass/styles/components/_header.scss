@@ -1,6 +1,7 @@
 $header-height: 50px;
 $underlay-height: 100vh;
 $timing: 500ms;
+$slide-ease: cubic-bezier(0.17, 0.04, 0.03, 0.94);
 
 html, body {
   margin-top: 0;
@@ -9,7 +10,7 @@ html, body {
 
 #under {
   @extend %carbon-fibre;
-  transition: top $timing cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  transition: top $timing $slide-ease;
   position: fixed;
   top: calc(-#{$underlay-height} + #{$header-height});
   width: 100%;
@@ -24,20 +25,40 @@ html, body {
     overflow-y: scroll;
     height: 100%;
     margin-bottom: $header-height;
+
+    h2 {
+      @extend %invisible;
+    }
+  }
+
+  .post--cat,
+  .post--date {
+    white-space: nowrap;
   }
 }
 
-#site-header {
+#title-bar {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: $header-height;
   border-bottom: 1px solid #ccc;
   background-color: #eee;
+
+  a.js-menu-toggle {
+    display: block;
+    float: right;
+    width: 50px;
+
+    img {
+      transition: all $timing $slide-ease;
+      width: 100%;
+    }
+  }
 }
 
 #wrapper {
-  transition: margin $timing cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  transition: margin $timing $slide-ease;
   position: relative;
   background-color: white;
   height: 100%;
@@ -51,5 +72,13 @@ body.open {
   #wrapper {
     margin-top: $underlay-height;
     z-index: -1;
+  }
+
+  #title-bar {
+    a.js-menu-toggle {
+      img {
+        transform: rotate(180deg);
+      }
+    }
   }
 }

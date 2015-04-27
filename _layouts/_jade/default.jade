@@ -6,8 +6,9 @@ html
     div#under
       .inner
         h2 Main Menu
+        | {% include header.html %}
         | {% include summary.html %}
-      | {% include header.html %}
+      | {% include title-bar.html %}
 
     div#wrapper
       | {{ content }}

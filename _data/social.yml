@@ -1,0 +1,11 @@
+- name: Twitter
+  url: http://twitter.com/ChrisAlbrecht
+  class: twitter
+
+- name: GitHub
+  url: http://github.com/KeyboardCowboy
+  class: github
+
+- name: RSS
+  url: /feed.xml
+  class: rss

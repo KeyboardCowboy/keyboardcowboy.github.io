@@ -1,9 +1,7 @@
 
 <footer id="site-footer">
-  <ul>
-    <li><a href="http://twitter.com/ChrisAlbrecht" target="_blank"><i class="twitter"></i><span>Twitter</span></a>
-    </li>
-    <li><a href="http://github.com/KeyboardCowboy" target="_blank"><i class="github"></i><span>GitHub</span></a>
-    </li>
+  <ul>{% for item in site.data.social %}
+    <li><a href="{{ item.url }}" target="_blank"><i class="{{ item.class }}"></i><span>{{ item.name }}</span></a>
+    </li>{% endfor %}
   </ul>
 </footer>

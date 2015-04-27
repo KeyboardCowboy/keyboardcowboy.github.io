@@ -1,5 +1,6 @@
 include ../../_jade/_base
 footer#site-footer
   ul
-    li: +social_link('twitter', 'Twitter', 'http://twitter.com/ChrisAlbrecht')
-    li: +social_link('github', 'GitHub', 'http://github.com/KeyboardCowboy')
+    | {% for item in site.data.social %}
+    li: +social_link("{{ item.class }}", "{{ item.name }}", "{{ item.url }}")
+    | {% endfor %}

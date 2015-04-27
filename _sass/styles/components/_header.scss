@@ -37,6 +37,22 @@ html, body {
   }
 }
 
+#site-header {
+  a.js-menu-toggle {
+    display: block;
+    float: right;
+    width: 50px;
+
+    img, svg {
+      width: 100%;
+      height: 50px;
+      path {
+        fill: white;
+      }
+    }
+  }
+}
+
 #title-bar {
   position: absolute;
   bottom: 0;
@@ -50,9 +66,10 @@ html, body {
     float: right;
     width: 50px;
 
-    img {
+    img, svg {
       transition: all $timing $slide-ease;
       width: 100%;
+      height: 50px;
     }
   }
 }
@@ -76,7 +93,7 @@ body.open {
 
   #title-bar {
     a.js-menu-toggle {
-      img {
+      img, svg {
         transform: rotate(180deg);
       }
     }

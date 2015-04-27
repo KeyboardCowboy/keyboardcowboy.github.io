@@ -1,8 +1,7 @@
 include ../../_jade/_base
 header#site-header
+  a(href="#").js-menu-toggle
+    img(src="/images/icons/SVG/times-circle-o.svg" alt="Close menu.")
   +nav('main')
     +menu_link('Home', '/')
-    li#logo
-      a(href='/')
-        img(src='', alt='Me')
     +menu_link('Blog', '/blog')

@@ -8,14 +8,14 @@ html, body {
 }
 
 #under {
-  @include transition(top $timing cubic-bezier(0.17, 0.04, 0.03, 0.94));
   @extend %carbon-fibre;
+  transition: top $timing cubic-bezier(0.17, 0.04, 0.03, 0.94);
   position: fixed;
   top: calc(-#{$underlay-height} + #{$header-height});
   width: 100%;
   height: $underlay-height;
   color: white;
-  z-index: 0;
+  z-index: 10;
   box-shadow: inset 0 -5px 5px 0 rgba(black, .5);
   overflow: hidden;
 
@@ -37,11 +37,12 @@ html, body {
 }
 
 #wrapper {
-  @include transition(margin $timing cubic-bezier(0.17, 0.04, 0.03, 0.94));
+  transition: margin $timing cubic-bezier(0.17, 0.04, 0.03, 0.94);
   position: relative;
   background-color: white;
   height: 100%;
   margin-top: $header-height;
+  z-index: 5;
 }
 
 body.open {

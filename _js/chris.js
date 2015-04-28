@@ -7,20 +7,31 @@
 
     // Bind menu toggle actions
     toggleMenu: function() {
-      // Bind toggler to the main button
-      $("a.js-menu-toggle").on('click', function(event) {
+      // Left Menu Toggle
+      $("a.js-menu-toggle.left").on('click', function(event) {
         event.preventDefault();
-        $("body").toggleClass('open');
+        $("body").removeClass('open-right').toggleClass('open-left');
       });
 
-      // Hide menu when link is clicked
-      $("ul.posts a", this.menu).on('click', function(event) {
+      // Right Menu Toggle
+      $("a.js-menu-toggle.right").on('click', function(event) {
+        event.preventDefault();
+        $("body").removeClass('open-left').toggleClass('open-right');
+      });
+
+      // Close Menus
+      $("a.js-close-menu").on('click', function() {
+        $("body").removeClass('open-left open-right');
+      });
+
+      // Hide menus when link is clicked
+      $("#posts li a").on('click', function(event) {
         var link = $(this);
         event.preventDefault();
-        $("body").removeClass('open');
-        var timer = setTimeout(function() {
+        $("body").removeClass('open-left');
+        setTimeout(function() {
           location.href = link.attr('href');
-        }, 500);
+        }, 250);
       });
     },
 

@@ -1,15 +1,12 @@
----
-layout: default
----
-<div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
-</div>
+<!DOCTYPE html>
+<html>{% include head.html %}
+  <body>
+    <div id="page">{% include header.html %}
+      <div id="main">
+        <nav role="navigation" id="posts"><a href="#" class="js-close-menu"><img src="/images/icons/SVG/times-circle-o.svg" alt="Close menu." class="icon"></a>{% include summary.html %}</nav>
+        <nav role="navigation" id="follow"><a href="#" class="js-close-menu"><img src="/images/icons/SVG/times-circle-o.svg" alt="Close menu." class="icon"></a>{% include follow.html %}</nav>{{ content }}
+        {% include post-footer.html %}
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,12 +1,6 @@
 #site-header {
   display: flex;
-  position: fixed;
   background-color: white;
-  width: 100%;
-  top: 0;
-  left: 0;
-  box-shadow: 0 2px 1px 0 rgba(0,0,0,.2);
-  z-index: 99;
 
   > a {
     flex-grow: 3;

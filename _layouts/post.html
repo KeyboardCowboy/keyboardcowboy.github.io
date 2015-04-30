@@ -3,10 +3,8 @@
   <body>
     <div id="page">{% include header.html %}
       <div id="main">
-        <nav role="navigation" id="posts"><a href="#" class="js-close-menu"><img src="/images/icons/SVG/times-circle-o.svg" alt="Close menu." class="icon"></a>{% include summary.html %}</nav>
-        <nav role="navigation" id="follow"><a href="#" class="js-close-menu"><img src="/images/icons/SVG/times-circle-o.svg" alt="Close menu." class="icon"></a>{% include follow.html %}</nav>{{ content }}
-        {% include post-footer.html %}
-      </div>
+        <nav role="navigation" id="posts"><a href="#" class="js-close-menu"><img src="/images/icons/SVG/times-circle-o.svg" alt="Close menu." class="icon"></a>{% include summary.html %}</nav>{{ content }}
+      </div>{% include post-footer.html %}
     </div>
   </body>
 </html>

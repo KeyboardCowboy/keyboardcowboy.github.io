@@ -11,10 +11,5 @@ html
             img(src="/images/icons/SVG/times-circle-o.svg", alt="Close menu.").icon
           | {% include summary.html %}
 
-        nav(role="navigation")#follow
-          a(href="#").js-close-menu
-            img(src="/images/icons/SVG/times-circle-o.svg", alt="Close menu.").icon
-          | {% include follow.html %}
-
         | {{ content }}
-        | {% include post-footer.html %}
+      | {% include post-footer.html %}

@@ -4,7 +4,8 @@
   left: -$posts-oc-width;
   top: 0;
   height: 100%;
-  background: #777;
+  background-color: $blue1;
+  box-shadow: inset -2px 0 2px 0 rgba(black, .5);
 }
 
 #follow {
@@ -14,12 +15,6 @@
   top: 0;
   height: 100%;
   background: #777;
-}
-
-#main {
-  transform: translateX(0);
-  transition: $timing transform $slide-ease;
-  //height: 100%;
 }
 
 body {

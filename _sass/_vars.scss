@@ -5,3 +5,10 @@ $slide-ease: cubic-bezier(0.17, 0.04, 0.03, 0.94);
 // Structure
 $posts-oc-width: 62%;
 $follow-oc-width: 100px;
+
+// Breakpoints
+$small-footer: "max-width: " + 750px;
+$large-footer: "min-width: " + 750px;
+
+// Colors
+$blue1: steelblue;

@@ -3,13 +3,7 @@ doctype html
 html
   | {% include head.html %}
   body
-    div#under
-      .inner
-        h2 Main Menu
-        | {% include header.html %}
-        | {% include summary.html %}
-      | {% include title-bar.html %}
-
-    div#wrapper
+    div#page
+      | {% include header.html %}
       | {{ content }}
-      | {% include footer.html %}
+      | {% include default-footer.html %}

@@ -1,7 +1,6 @@
 include ../../_jade/_base
 header#site-header
-  a(href="#").js-menu-toggle
-    img(src="/images/icons/SVG/times-circle-o.svg" alt="Close menu.")
-  +nav('main')
-    +menu_link('Home', '/')
-    +menu_link('Blog', '/blog')
+  a(href="#").js-menu-toggle.left
+    img(src="/images/icons/SVG/meatballs.svg" alt="Toggle blog list.").icon
+
+  a(href="/", title="Home").home KeyboardCowboy

@@ -1,101 +1,21 @@
-$header-height: 50px;
-$underlay-height: 100vh;
-$timing: 500ms;
-$slide-ease: cubic-bezier(0.17, 0.04, 0.03, 0.94);
-
-html, body {
-  margin-top: 0;
-  height: 100%;
-}
-
-#under {
-  @extend %carbon-fibre;
-  transition: top $timing $slide-ease;
-  position: fixed;
-  top: calc(-#{$underlay-height} + #{$header-height});
-  width: 100%;
-  height: $underlay-height;
-  color: white;
-  z-index: 10;
-  box-shadow: inset 0 -5px 5px 0 rgba(black, .5);
-  overflow: hidden;
-
-  .inner {
-    padding: 2em;
-    overflow-y: scroll;
-    height: 100%;
-    margin-bottom: $header-height;
-
-    h2 {
-      @extend %invisible;
-    }
-  }
-
-  .post--cat,
-  .post--date {
-    white-space: nowrap;
-  }
-}
-
 #site-header {
-  a.js-menu-toggle {
-    display: block;
-    float: right;
-    width: 50px;
-
-    img, svg {
-      width: 100%;
-      height: 50px;
-      path {
-        fill: white;
-      }
-    }
-  }
-}
-
-#title-bar {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: $header-height;
-  border-bottom: 1px solid #ccc;
-  background-color: #eee;
-
-  a.js-menu-toggle {
-    display: block;
-    float: right;
-    width: 50px;
-
-    img, svg {
-      transition: all $timing $slide-ease;
-      width: 100%;
-      height: 50px;
-    }
-  }
-}
-
-#wrapper {
-  transition: margin $timing $slide-ease;
-  position: relative;
+  display: flex;
   background-color: white;
-  height: 100%;
-  margin-top: $header-height;
-  z-index: 5;
-}
 
-body.open {
-  #under {top: 0;}
+  > a {
+    flex-grow: 3;
+    text-align: center;
 
-  #wrapper {
-    margin-top: $underlay-height;
-    z-index: -1;
-  }
+    &.left {
+      text-align: left;
+    }
 
-  #title-bar {
-    a.js-menu-toggle {
-      img, svg {
-        transform: rotate(180deg);
-      }
+    &.right {
+      text-align: right;
+    }
+
+    &.js-menu-toggle {
+      flex-grow: 1;
     }
   }
 }

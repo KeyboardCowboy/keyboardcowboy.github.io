@@ -1,0 +1,15 @@
+include ../../_jade/_base
+doctype html
+html
+  | {% include head.html %}
+  body
+    #page
+      | {% include header.html %}
+      #main
+        nav(role="navigation")#posts
+          a(href="#").js-close-menu
+            img(src="/images/icons/SVG/times-circle-o.svg", alt="Close menu.").icon
+          | {% include summary.html %}
+
+        | {{ content }}
+      | {% include post-footer.html %}

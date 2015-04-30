@@ -1,0 +1,19 @@
+html, body {
+  margin-top: 0;
+  height: 100%;
+}
+
+#page {
+  height: 100%;
+}
+
+#main {
+  transform: translateX(0);
+  transition: $timing transform $slide-ease;
+  padding-bottom: calc(50px + 1em);
+}
+
+svg.icon, img.icon {
+  @include size(50px);
+  margin: 5px;
+}

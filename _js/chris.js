@@ -8,20 +8,14 @@
     // Bind menu toggle actions
     toggleMenu: function() {
       // Left Menu Toggle
-      $("a.js-menu-toggle.left").on('click', function(event) {
+      $("a.js-menu-toggle").on('click', function(event) {
         event.preventDefault();
-        $("body").removeClass('open-right').toggleClass('open-left');
-      });
-
-      // Right Menu Toggle
-      $("a.js-menu-toggle.right").on('click', function(event) {
-        event.preventDefault();
-        $("body").removeClass('open-left').toggleClass('open-right');
+        $(this).siblings('ul').toggleClass('invisible');
       });
 
       // Close Menus
       $("a.js-close-menu").on('click', function() {
-        $("body").removeClass('open-left open-right');
+        $('ul', $(this)).addClass('invisible');
       });
 
       // Hide menus when link is clicked

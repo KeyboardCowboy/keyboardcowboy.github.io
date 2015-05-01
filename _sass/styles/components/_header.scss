@@ -1,21 +1,98 @@
+$nav-border-color: #ddd;
+$nav-text-color: #666;
+
 #site-header {
-  display: flex;
-  background-color: white;
+  border-top: 1px solid $nav-border-color;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 
-  > a {
-    flex-grow: 3;
-    text-align: center;
+  #nav-main {
+    > ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
 
-    &.left {
-      text-align: left;
-    }
+      img, svg {
+        height: 50px;
+        width: 50px;
+        padding: .5em;
+      }
 
-    &.right {
-      text-align: right;
-    }
+      svg path {
+        transition: .1s fill ease-in;
+        color: $nav-text-color;
+      }
 
-    &.js-menu-toggle {
-      flex-grow: 1;
+      > li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        flex-grow: 1;
+        position: relative;
+
+        a {
+          display: block;
+          text-align: center;
+          line-height: 0;
+          transition: .1s all ease-in;
+          color: $nav-text-color;
+          text-transform: uppercase;
+          text-decoration: none;
+          background-color: rgba(white, .9);
+
+          > * {
+            vertical-align: middle;
+          }
+
+          &:hover, &:focus {
+            background-color: $blue1;
+            color: white;
+            text-decoration: underline;
+
+            svg path {
+              fill: white;
+            }
+          }
+
+          // Hide text on small screens
+          @media($small-footer) {
+            span {
+              @include hide-text;
+            }
+          }
+        }
+
+        + li {
+          border-left: 1px solid $nav-border-color;
+        }
+
+        // Second level flyouts
+        ul {
+          position: absolute;
+          width: 100%;
+          bottom: 50px;
+          border: 1px solid $nav-border-color;
+          border-radius: 5px 5px 0 0;
+          box-shadow: inset 0 -2px 5px 0 rgba(black, .4);
+          background-color: $blue1;
+          padding: 1em;
+
+          li {
+            display: block;
+            margin: 0;
+          }
+
+          a {
+            line-height: normal;
+            text-align: left;
+            color: white;
+            background-color: $blue1;
+          }
+        }
+      }
     }
   }
 }
+

@@ -3,7 +3,9 @@ doctype html
 html
   | {% include head.html %}
   body
-    div#page
-      | {% include header.html %}
-      | {{ content }}
-      | {% include default-footer.html %}
+    #page
+      | {% include default-nav.html %}
+      section
+        | {% include default-header.html %}
+        main#section--main
+          | {{ content }}

@@ -1,5 +1,5 @@
 include ../../_jade/_base
-ul
+ul.invisible
   | {% for item in site.data.social %}
   li: +social_link("{{ item.class }}", "{{ item.name }}", "{{ item.url }}")
   | {% endfor %}

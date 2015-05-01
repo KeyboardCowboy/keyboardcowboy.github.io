@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>{% include head.html %}
   <body>
-    <div id="page">{% include header.html %}
-      <div id="main">
-        <nav role="navigation" id="posts"><a href="#" class="js-close-menu"><img src="/images/icons/SVG/times-circle-o.svg" alt="Close menu." class="icon"></a>{% include summary.html %}</nav>{{ content }}
-      </div>{% include post-footer.html %}
+    <div id="page">{% include post-nav.html %}
+      <article id="post">{% include post-header.html %}
+        <main id="post--main">{{ content }}</main>
+      </article>
     </div>
   </body>
 </html>

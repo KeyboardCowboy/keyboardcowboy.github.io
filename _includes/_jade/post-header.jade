@@ -1,0 +1,6 @@
+include ../../_jade/_base
+header#post--header
+  img(src="{{ page.hero }}")
+  h1 {{ page.title }}
+  #author {{ page.author }}
+  time(datetime="{{ page.date | date: '%Y-%m-%d' }}") {{ page.date | date: "%B %-d, %Y" }}

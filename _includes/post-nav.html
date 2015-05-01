@@ -1,0 +1,18 @@
+
+<header id="site-header">
+  <nav id="nav-main" role="navigation">
+    <ul>
+      <li>{% if page.previous %}<a href="{{ page.previous.url }}" title="{{ page.previous.title }}"><img src="/images/icons/SVG/chevron-left.svg" alt="Previous Post"/><span>Previous</span></a>{% else %}<a href="/" title="Home"><img src="/images/icons/SVG/chevron-left.svg" alt="Home Page"/><span>Home</span></a>{% endif %}</li>
+      <li><a href="#" class="js-menu-toggle"><img src="/images/icons/SVG/meatballs.svg" alt="Browse Posts"/><span>Posts</span></a></li>
+      <li class="header"><a href="#" class="js-menu-toggle"><img src="/images/icons/SVG/sign-out.svg" alt="Follow Chris"/><span>Follow</span></a>{% include follow.html %}</li>
+      <li class="header"><a href="#" class="js-menu-toggle"><img src="/images/icons/SVG/share2.svg" alt="Share This Post"/><span>Share</span></a>
+        <ul class="invisible">
+          <li>Link 1</li>
+          <li>Link 2</li>
+          <li>Link 3</li>
+        </ul>
+      </li>
+      <li>{% if page.next %}<a href="{{ page.next.url }}" title="{{ page.next.title }}"><span>Next</span><img src="/images/icons/SVG/chevron-right.svg" alt="Next Post"/></a>{% else %}<a href="/" title="Home"><span>Home</span><img src="/images/icons/SVG/chevron-right.svg" alt="Home Page"/></a>{% endif %}</li>
+    </ul>
+  </nav>
+</header>

@@ -56,29 +56,6 @@
   height: 1px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_orion\/extends\/_menus\.scss}line{font-family:\000035}}
-nav#nav-main ul {
-  margin: 0;
-  padding: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_orion\/extends\/_menus\.scss}line{font-family:\000039}}
-nav#nav-main ul li {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  vertical-align: top;
-  margin-right: -5px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_orion\/extends\/_menus\.scss}line{font-family:\0000316}}
-nav#nav-main ul li a {
-  display: inline-block;
-  line-height: normal;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_orion\/extends\/_menus\.scss}line{font-family:\0000321}}
-nav#nav-main ul li.last a {
-  border-right: none;
-}
-
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_orion\/styles\/_base\.scss}line{font-family:\000034}}
 * {
   box-sizing: border-box;
@@ -941,9 +918,14 @@ svg.icon, img.icon {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_header\.scss}line{font-family:\0000335}}
+@media (min-width: 750px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_header\.scss}line{font-family:\0000328}}
+  #site-header #nav-main > ul > li {
+    position: relative;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_header\.scss}line{font-family:\0000338}}
 #site-header #nav-main > ul > li a {
   display: block;
   text-align: center;
@@ -955,68 +937,82 @@ svg.icon, img.icon {
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.9);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_header\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_header\.scss}line{font-family:\0000348}}
 #site-header #nav-main > ul > li a > * {
   vertical-align: middle;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_header\.scss}line{font-family:\0000349}}
-#site-header #nav-main > ul > li a:hover, #site-header #nav-main > ul > li a:focus {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_header\.scss}line{font-family:\0000352}}
+#site-header #nav-main > ul > li a:hover, #site-header #nav-main > ul > li a:focus, #site-header #nav-main > ul > li a:active {
   background-color: steelblue;
   color: white;
   text-decoration: underline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_header\.scss}line{font-family:\0000354}}
-#site-header #nav-main > ul > li a:hover svg path, #site-header #nav-main > ul > li a:focus svg path {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_header\.scss}line{font-family:\0000357}}
+#site-header #nav-main > ul > li a:hover svg path, #site-header #nav-main > ul > li a:focus svg path, #site-header #nav-main > ul > li a:active svg path {
   fill: white;
 }
 @media (max-width: 750px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_header\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_header\.scss}line{font-family:\0000364}}
   #site-header #nav-main > ul > li a span {
     color: transparent;
     font: 0/0 a;
     text-shadow: none;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_header\.scss}line{font-family:\0000367}}
-#site-header #nav-main > ul > li + li {
-  border-left: 1px solid #ddd;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_header\.scss}line{font-family:\0000372}}
-#site-header #nav-main > ul > li ul {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_header\.scss}line{font-family:\0000370}}
+#site-header #nav-main > ul > li .submenu {
   position: absolute;
   width: 100%;
-  bottom: 50px;
+  bottom: 0;
+  left: 0;
   border: 1px solid #ddd;
   border-radius: 5px 5px 0 0;
   box-shadow: inset 0 -2px 5px 0 rgba(0, 0, 0, 0.4);
   background-color: steelblue;
-  padding: 1em;
+  padding: 1em 1em 0 1em;
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: 250ms all cubic-bezier(0.17, 0.04, 0.03, 0.94);
+          transition: 250ms all cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  z-index: -5;
+  background-color: steelblue;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_header\.scss}line{font-family:\0000382}}
-#site-header #nav-main > ul > li ul li {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_header\.scss}line{font-family:\0000385}}
+#site-header #nav-main > ul > li .submenu li {
   display: block;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_header\.scss}line{font-family:\0000387}}
-#site-header #nav-main > ul > li ul a {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_header\.scss}line{font-family:\0000389}}
+#site-header #nav-main > ul > li .submenu li a {
   line-height: normal;
   text-align: left;
   color: white;
   background-color: steelblue;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_main-nav\.scss}line{font-family:\000032}}
-nav#nav-main ul {
-  text-align: center;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_header\.scss}line{font-family:\0000397}}
+#site-header #nav-main > ul > li .submenu .spacer {
+  height: 50px;
+  visibility: hidden;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_main-nav\.scss}line{font-family:\000039}}
-#logo a {
-  width: 50px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_header\.scss}line{font-family:\00003105}}
+#site-header #nav-main > ul > li.open .js-menu-toggle {
+  background-color: steelblue;
+  color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_main-nav\.scss}line{font-family:\0000312}}
-#logo img {
-  width: 100%;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_header\.scss}line{font-family:\00003109}}
+#site-header #nav-main > ul > li.open .js-menu-toggle svg path {
+  fill: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_header\.scss}line{font-family:\00003114}}
+#site-header #nav-main > ul > li.open .submenu {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_header\.scss}line{font-family:\00003119}}
+#site-header #nav-main > ul > li + li {
+  border-left: 1px solid #ddd;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Chris\/www\/htdocs\/chris\/_sass\/styles\/components\/_posts-sidebar\.scss}line{font-family:\000031}}

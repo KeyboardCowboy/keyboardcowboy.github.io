@@ -11,13 +11,15 @@ header#site-header
         a(href="#").js-menu-toggle
           img(src="/images/icons/SVG/sign-out.svg", alt="Follow Chris")
           span Follow
-        | {% include follow.html %}
+        +submenu
+          | {% include follow.html %}
 
       li
         a(href="#").js-menu-toggle
           img(src="/images/icons/SVG/share2.svg", alt="Share This Post")
           span Share
-        ul.invisible
-          li Link 1
-          li Link 2
-          li Link 3
+        +submenu
+          ul
+            li Link 1
+            li Link 2
+            li Link 3

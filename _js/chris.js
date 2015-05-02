@@ -2,20 +2,29 @@
   var Chris = {
     // Init
     init: function() {
-      this.menu = $("#under .inner");
+      this.nav = $("#nav-main");
     },
 
     // Bind menu toggle actions
     toggleMenu: function() {
-      // Left Menu Toggle
+      // Menu Toggle
       $("a.js-menu-toggle").on('click', function(event) {
         event.preventDefault();
-        $(this).siblings('ul').toggleClass('invisible');
+
+        $item = $(this).parent('li');
+        open = $item.hasClass('open');
+
+        // Close any open menus
+        $('li', this.nav).removeClass('open');
+
+        if (!open) {
+          $item.addClass('open');
+        }
       });
 
       // Close Menus
       $("a.js-close-menu").on('click', function() {
-        $('ul', $(this)).addClass('invisible');
+        $('.submenu', $(this)).addClass('invisible');
       });
 
       // Hide menus when link is clicked

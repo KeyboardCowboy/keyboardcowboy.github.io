@@ -1,0 +1,64 @@
+@mixin social-icon($name, $color) {
+  @include focus(social-links__item-link--#{$name}) {
+    svg path {fill: $color;}
+    .social-links__item-text {
+      color: $color;
+      border-color: $color;
+    }
+  }
+}
+
+.block--social__desc {
+  @include invisible;
+}
+
+.social-links {
+  margin: 0;
+  padding: 0;
+}
+
+.social-links__item {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.social-links__item-link {
+  display: inline-block;
+  padding: 1em;
+  outline: none;
+  position: relative;
+  color: $text-diminished;
+  text-decoration: none;
+
+  &:visited {
+    color: $text-diminished;
+  }
+
+  svg {
+    width: 4rem;
+    height: 4rem;
+    vertical-align: middle;
+    margin-right: 1em;
+
+    path {
+      transition: .2s fill ease-in-out;
+      fill: $text-diminished;
+    }
+  }
+}
+
+.social-links__item-text {
+  font-size: 2em;
+  vertical-align: middle;
+  transition: .2s color ease-in-out;
+}
+
+@include social-icon(twitter, $twitter);
+@include social-icon(github, $github);
+@include social-icon(lullabot, $lullabot);
+@include social-icon(lanyrd, $lanyrd);
+@include social-icon(drupal, $drupal);
+@include social-icon(amazon, $amazon);
+@include social-icon(foursquare, $foursquare);
+@include social-icon(flickr, $flickr);

@@ -1,11 +1,39 @@
-- name: Twitter
-  url: http://twitter.com/ChrisAlbrecht
-  class: twitter
+- twitter:
+  name: Twitter
+  url: https://twitter.com/ChrisAlbrecht
+  icon: images/twitter.svg
 
-- name: GitHub
-  url: http://github.com/KeyboardCowboy
-  class: github
+- github:
+  name: GitHub
+  url: https://github.com/keyboardcowboy
+  icon: images/github.svg
 
-- name: RSS
-  url: /feed.xml
-  class: rss
+- lanyrd:
+  name: Lanyrd
+  url: http://lanyrd.com/profile/chrisalbrecht
+  icon: images/lanyrd.svg
+
+- lullabot:
+  name: Lullabot
+  url: https://www.lullabot.com/who-we-are/chris-albrecht
+  icon: images/lullabot_head.svg
+
+- drupal:
+  name: Drupal
+  url: https://www.drupal.org/u/keyboardcowboy
+  icon: images/drupal.svg
+
+- amazon:
+  name: Amazon
+  url: http://www.amazon.com/registry/wishlist/1ZKPWMKJ9IU9E
+  icon: images/amazon.svg
+
+- flickr:
+  name: Flickr
+  url: https://www.flickr.com/photos/chrisalbrecht/
+  icon: images/flickr3.svg
+
+- foursquare:
+  name: Foursquare
+  url: https://foursquare.com/chrisalbrecht
+  icon: images/foursquare.svg

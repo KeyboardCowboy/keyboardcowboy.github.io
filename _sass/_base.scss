@@ -1,9 +1,7 @@
-@import "../_orion/orion";
-
-@import "../_orion/normalize";
-@import "../_orion/typeplate";
+@import "bourbon/bourbon";
 @import "vars";
+@import "mixins";
 
+@import "normalize";
 @import "styles/global";
-
 @import "styles/components/*";

@@ -1,22 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
 html, body {
-  margin-top: 0;
   height: 100%;
 }
 
-#page {
-  height: 100%;
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #eee url('../images/texture.png') repeat;
 }
 
-#section--main,
-#post--main {
-  padding-bottom: calc(50px + 1em);
+.page-main {
+  padding: 1em 2em;
+  border-top: 1px solid #eee;
 }
 
-svg.icon, img.icon {
-  @include size(50px);
-  margin: 5px;
+.page-title {
+  font-size: 4rem;
+  text-shadow: 1px 1px 1px #ca8e19;
 }
 
-.invisible {
-  @extend %invisible;
+.page-subtitle {
+  font-size: 1.5rem;
+}
+
+.block--social {
+  text-align: center;
+}
+
+.block--twitter {
+  margin-top: 2em;
+}
+
+@include expand-to(1100px) {
+  .social-links__item {
+    display: inline-block;
+    width: 50%;
+    margin-right: -5px;
+  }
+}
+
+@include expand-to(700px) {
+  .page-main {
+    padding: 1em 5%;
+  }
+
+  .block--social {
+    float: left;
+    width: 62%;
+    padding-right: .5em;
+  }
+  .block--twitter {
+    float: right;
+    padding-left: .5em;
+    width: 38%;
+  }
 }

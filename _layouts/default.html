@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html>{% include head.html %}
-  <body>
-    <div id="page">{% include default-nav.html %}
-      <section>{% include default-header.html %}
-        <main id="section--main">{{ content }}</main>
-      </section>
-    </div>
+<html>
+  {% include head.html %}
+  <body class="page--default">
+    <header class="page-header">
+      <h1 class="page-title">Chris Albrecht</h1>
+      <div class="page-subtitle">Hi, I'm Chris.<br />I build web things.</div>
+    </header>
+    <main class="page-main">
+      {{ content }}
+    </main>
+    <footer class="page-footer"></footer>
   </body>
 </html>

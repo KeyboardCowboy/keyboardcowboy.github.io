@@ -8,8 +8,19 @@ $follow-oc-width: 100px;
 $nav-height: 50px;
 
 // Breakpoints
-$small-footer: "max-width: " + 750px;
-$large-footer: "min-width: " + 750px;
+$float-twitter-right: 800px;
+$two-col-social: 700px;
+$three-col-social: 1000px;
 
 // Colors
-$blue1: steelblue;
+$text-main: #444;
+$text-diminished: #999;
+
+$twitter: #00ACED;
+$github: #0D2636;
+$lanyrd: #3C80CA;
+$lullabot: #E13526;
+$drupal: #28A9E0;
+$amazon: #FF8604;
+$foursquare: #F94877;
+$flickr: #0154D8;

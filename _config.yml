@@ -25,4 +25,4 @@ permalink: pretty
 markdown: kramdown
 
 # Files
-exclude: ['Gemfile', 'Gemfile.lock']
+exclude: ['Gemfile', 'Gemfile.lock', 'config.codekit']

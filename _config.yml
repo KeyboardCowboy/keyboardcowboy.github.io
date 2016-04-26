@@ -1,11 +1,28 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Local Config
+# To serve the local site, run:
+# jekyll serve --config _config.yml,_config-local.yml
+
 # Site settings
-title: KeyboardCowboy's Blog
-description: Articles, reviews and musings by Chris Albrecht, a.k.a. KeyboardCowboy.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://keyboardcowboy.github.io" # the base hostname & protocol for your site
+title: KeyboardCowboy
+email: chris@162unlimited.com
+
+twitter_username: ChrisAlbrecht
+github_username:  keyboardcowboy
+
+# URLs
+url: "http://chrisalbrecht.me"
+baseurl: ""
+permalink: pretty
 
 # Build settings
 markdown: kramdown
 
-# Exlusions
-exclude: [config.codekit]
+# Files
+exclude: ['Gemfile', 'Gemfile.lock']

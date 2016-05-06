@@ -1,5 +1,35 @@
+@mixin followme-icon($name, $color) {
+  .social-links--mobile-landing__item-link--#{$name} {
+    svg path {fill: $color;}
+
+    .social-links--mobile-landing__item-text {
+      color: $color;
+      border-color: $color;
+    }
+
+    .social-links--mobile-landing__item-text:visited {
+      color: $color;
+    }
+
+    .social-links--mobile-landing__item-text:active,
+    .social-links--mobile-landing__item-text:focus {
+      background-color: #eee;
+      border-radius: .5em;
+    }
+  }
+}
+
+.page--mobile-landing__avatar {
+  width: auto;
+  vertical-align: middle;
+  border-bottom-right-radius: .5em;
+}
+
 .page-title--mobile-landing {
-  margin: 0;
+  display: inline-block;
+  margin: 0 0 0 .5em;
+  vertical-align: middle;
+  text-shadow: 1px 1px 0 white;
 }
 
 .social-links--mobile-landing {
@@ -12,7 +42,7 @@
 
 .social-links--mobile-landing__item {
   display: block;
-  flex: 1;
+  flex: 1 1 auto;
 }
 
 .social-links--mobile-landing__item-text {
@@ -30,15 +60,24 @@
   }
 }
 
+@include followme-icon(twitter, $twitter);
+@include followme-icon(github, $github);
+@include followme-icon(lullabot, $lullabot);
+@include followme-icon(lanyrd, $lanyrd);
+@include followme-icon(drupal, $drupal);
+@include followme-icon(amazon, $amazon);
+@include followme-icon(foursquare, $foursquare);
+@include followme-icon(flickr, $flickr);
+
 @media screen and (orientation: portrait) {
-  .page-header--mobile-landing {
-    height: 15vh;
-    padding: 2em 1em;
+  .page-header--mobile-landing,
+  .page--mobile-landing__avatar {
+    max-height: 15vh;
   }
 
   .page-main--mobile-landing {
     height: 85vh;
-    padding-bottom: 2em;
+    padding: 2em 0;
   }
 
   .social-links--mobile-landing__item-link {
@@ -47,14 +86,14 @@
 }
 
 @media screen and (orientation: landscape) {
-  .page-header--mobile-landing {
-    height: 30vh;
-    padding: 1em;
+  .page-header--mobile-landing,
+  .page--mobile-landing__avatar {
+    max-height: 30vh;
   }
 
   .page-main--mobile-landing {
     height: 70vh;
-    padding-bottom: 2em;
+    padding: 1em 0 2em 0;
   }
 
   .social-links--mobile-landing__item-link {

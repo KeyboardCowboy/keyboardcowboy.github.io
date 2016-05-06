@@ -5,7 +5,7 @@
   display:
     followme: true
   order-default: 0
-  order-followme: 7
+  order-followme: 5
 
 - github:
   name: GitHub
@@ -14,7 +14,7 @@
   display:
     followme: true
   order-default: 1
-  order-followme: 6
+  order-followme: 15
 
 - lanyrd:
   name: Lanyrd
@@ -23,7 +23,7 @@
   display:
     followme: true
   order-default: 2
-  order-followme: 5
+  order-followme: 25
 
 - lullabot:
   name: Lullabot
@@ -32,7 +32,7 @@
   display:
     followme: true
   order-default: 3
-  order-followme: 4
+  order-followme: 30
 
 - drupal:
   name: Drupal
@@ -41,7 +41,7 @@
   display:
     followme: true
   order-default: 4
-  order-followme: 3
+  order-followme: 20
 
 - amazon:
   name: Amazon
@@ -59,7 +59,7 @@
   display:
     followme: true
   order-default: 6
-  order-followme: 1
+  order-followme: 35
 
 - foursquare:
   name: Foursquare
@@ -68,4 +68,4 @@
   display:
     followme: true
   order-default: 7
-  order-followme: 0
+  order-followme: 10

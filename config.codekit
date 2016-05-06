@@ -3170,6 +3170,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_site\/images\/cowboy.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7510,
+		"inputAbbreviatedPath": "\/_site\/images\/cowboy.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/cowboy.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_site\/images\/icons\/demo-files\/demo.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -3264,6 +3275,17 @@
 		"initialSize": 299087,
 		"inputAbbreviatedPath": "\/images\/bierstadt.jpg",
 		"outputAbbreviatedPath": "\/images\/bierstadt.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cowboy.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7510,
+		"inputAbbreviatedPath": "\/images\/cowboy.jpg",
+		"outputAbbreviatedPath": "\/images\/cowboy.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

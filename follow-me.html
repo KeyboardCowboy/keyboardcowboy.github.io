@@ -7,7 +7,7 @@ title: Follow Me | Chris Albrecht - KeyboardCowboy
   {% for network in networks %}
   {% if network.display.followme %}
   <li class="social-links__item social-links--mobile-landing__item">
-    <a href="{{ network.url }}" class="social-links--mobile-landing__item-link social-links--mobile-landing__item-link--{{ network.name | slugify }}">
+    <a href="{{ network.url }}" class="social-links--mobile-landing__item-link social-links--mobile-landing__item-link--{{ network.name | slugify }}" target="_blank">
       {% include_relative {{ network.icon }} %}
       <span class="social-links--mobile-landing__item-text">{{ network.name }}</span>
     </a>

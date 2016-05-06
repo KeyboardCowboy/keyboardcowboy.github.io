@@ -62,3 +62,12 @@
 @include social-icon(amazon, $amazon);
 @include social-icon(foursquare, $foursquare);
 @include social-icon(flickr, $flickr);
+
+
+@include expand-to(1100px) {
+  .social-links--default__item {
+    display: inline-block;
+    width: 50%;
+    margin-right: -5px;
+  }
+}

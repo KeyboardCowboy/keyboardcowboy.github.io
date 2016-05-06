@@ -1,0 +1,17 @@
+---
+layout: mobile-landing
+title: Follow Me | Chris Albrecht - KeyboardCowboy
+---
+<ul class="social-links social-links--mobile-landing">
+  {% assign networks = site.data.social | sort: 'order-followme' %}
+  {% for network in networks %}
+  {% if network.display.followme %}
+  <li class="social-links__item social-links--mobile-landing__item">
+    <a href="{{ network.url }}" class="social-links--mobile-landing__item-link social-links--mobile-landing__item-link--{{ network.name | slugify }}">
+      {% include_relative {{ network.icon }} %}
+      <span class="social-links--mobile-landing__item-text">{{ network.name }}</span>
+    </a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>

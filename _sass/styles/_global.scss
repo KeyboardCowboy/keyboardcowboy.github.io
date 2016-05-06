@@ -33,14 +33,6 @@ body {
   margin-top: 2em;
 }
 
-@include expand-to(1100px) {
-  .social-links__item {
-    display: inline-block;
-    width: 50%;
-    margin-right: -5px;
-  }
-}
-
 @include expand-to(700px) {
   .page-main {
     padding: 1em 5%;
